@@ -1,507 +1,434 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/skins/color-1.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <!-- Style Switcher -->
-    <link rel="stylesheet" href="css/skins/color-1.css" class="alternate-style" title="color-1" disabled>
-    <link rel="stylesheet" href="css/skins/color-2.css" class="alternate-style" title="color-2" disabled>
-    <link rel="stylesheet" href="css/skins/color-3.css" class="alternate-style" title="color-3" disabled>
-    <link rel="stylesheet" href="css/skins/color-4.css" class="alternate-style" title="color-4" disabled>
-    <link rel="stylesheet" href="css/skins/color-5.css" class="alternate-style" title="color-5" disabled>
-    <link rel="stylesheet" href="css/style-switcher.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="Template portafolio desarrollador UI/UX " />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="Favicon.ico">
+    <link rel="stylesheet" href="https://unpkg.com/primeflex@^3/primeflex.css">
+    <link rel="stylesheet" href="https://unpkg.com/primeflex/themes/saga-blue.css">
+    <script src="https://kit.fontawesome.com/b3f17f1dac.js" crossorigin="anonymous"></script>
+    
 </head>
-<body class="dark">
-    <!-- Main Container Start -->
-    <div class="main-container">
-        <!-- Aside Start -->
-        <div class="aside">
-            <div class="logo hidden">
-                <a href="#"><span>A</span>ETC</a>
+
+<body>
+    <!-- HEADER -->
+    <header class="flex w-full fixed top-0 z-1">
+        <nav class="flex justify-content-between w-full navbar header-portafolio">
+            
+                <span class="logo cursor-pointer" onclick="scrollToSection('home')">
+                    <img src="./assets/Logo.png" alt="Logo portafolio" width="50" height="50">
+                </span>
+                <input type="checkbox" aria-label="Checkbox para mostrar y quitar hamburger menu"
+                    class="checkbox xl:hidden">
+                <div class="hamburger__lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </div>
+                <div class="header__info flex align-items-center gap-3">
+                    <ul class="flex flex-column xl:flex-row list-none">
+                        <li onclick="scrollToSection('about')">Sobre mí</li>
+                        <li onclick="scrollToSection('services')">Servicios</li>
+                        <li onclick="scrollToSection('portfolio')">Portafolio</li>
+                        <li onclick="scrollToSection('contact')">Contacto</li>
+                    </ul>
+                    <div class="hireMe__button">
+                        <a href="mailTo:john@email.com" aria-label="Enviar mensaje al correo"
+                            class="cursor-pointer no-underline border-round-lg text-xl xl:text-sm">Contratame</a>
+                    </div>
+                </div>
+            
+        </nav>
+    </header>
+    
+    <!--HOME PAGE -->
+    <div class="container bg-home bg-cover">
+        
+        <section id="home"
+            class="home__page flex align-items-center justify-content-center xl\:justify-content-between grid grid-nogutter gap-4">
+            <div class="left__content col-12 xl:col-6">
+                <div class="message__bubble triangle mb-4 md:mb-2">
+                    <div class="message__text p-2 sm:p-3 text-center">
+                        <p>Hola, Me llamo</p>
+                    </div>
+                </div>
+                <h1 class="text-3xl sm:text-5xl md:text-7xl">Erick Ticona</h1>
+                <p class="typing">
+                    
+                </p>
+                <div class="home__buttons flex align-items-center gap-2 mt-6">
+                    <a href="./assets/CURRICULUM.pdf" aria-label="Descargar curriculum"
+                        class="cursor-pointer border-round-lg no-underline" download>Descargar CV</a>
+                    <button onclick="scrollToSection('portfolio')" aria-label="Deslizar a sección portafolio para mostrar mis trabajos"
+                        class="cursor-pointer border-round-lg">Mi trabajo</button>
+                </div>
             </div>
-            <div class="nav-toggler">
-                <span></span>
+            <div class="right__content col-9 sm:col-6 xl:col-5">
+                <img src="./assets/foto-perfil.png" alt="Foto perfil" width="100" height="100">
             </div>
-            <ul class="nav">
-                <li><a href="#home" class="active"><i class="fa fa-home"></i> Home</a></li>
-                <li><a href="#about"><i class="fa fa-user"></i> About</a></li>
-                <li><a href="#service"><i class="fa fa-list"></i> Services</a></li>
-                <li><a href="#portfolio"><i class="fa fa-briefcase"></i> Portfolio</a></li>
-                <li><a href="#contact"><i class="fa fa-comments"></i> Contact</a></li>
-            </ul>
-        </div>
-        <!-- Aside End -->
-        <!-- Main Content Start -->
-        <div class="main-content">
-            <!-- Home Section Start -->
-            <section class="home section" id="home">
-                <div class="container">
-                    <div class="row">
-                        <div class="home-info padd-15">
-                            <h3 class="hello">Hello, my name is <span class="name">Erick Ticona</span></h3>
-                            <h3 class="my-profession">I´m a <span class="typing">Web Developer</span></h3>
-                            <p> I´m a web Designer with extensive experience for over 10 years. My expertise is to
-                                create and website design, graphic design, and many more...</p>
-                            <a href="#contact" class="btn hire-me">Hire Me</a>
-                        </div>
-                        <div class="home-img padd-15">
-                            <img src="images/hero.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- Home Section End -->
-            <!-- About Section Start -->
-            <section class="about section" id="about">
-                <div class="container">
-                    <div class="row">
-                        <div class="section-title padd-15">
-                            <h2>About Me</h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="about-content padd-15">
-                            <div class="row">
-                                <div class="about-text padd-15">
-                                    <h3>I´m Erick Ticona and <span></span></h3>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis eaque est iure maiores aliquam reprehenderit repellendus odio, quidem sed eos quae incidunt vel aperiam earum ad amet quibusdam officiis nulla!</p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="personal-info padd-15">
-                                    <div class="row">
-                                        <div class="info-item padd-15">
-                                            <p>Birthday : <span>11 Sep 2000</span></p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p>Age : <span>22 years</span></p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p>Email : <span>erick.ticona.dev@gmail.com</span></p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p>Phone : <span>+51 922 996 519</span></p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p>City : <span>Lima</span></p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p>District : <span>San Juan de Miraflores</span></p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p>Freelance : <span>Available</span></p>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="buttons padd-15">
-                                            <a href="#" class="btn"> Download CV</a>
-                                            <a href="contact" class="btn hire-me">Hire me</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="skills padd-15">
-                                    <div class="row">
-                                        <div class="skill-item padd-15">
-                                            <h5>CSS</h5>
-                                            <div class="progress">
-                                                <div class="progress-in" style="width: 76%; "></div>
-                                                <div class="skill-percent">76%</div>
-                                            </div>
-                                        </div>
-                                        <div class="skill-item padd-15">
-                                            <h5>JS</h5>
-                                            <div class="progress">
-                                                <div class="progress-in" style="width: 86%; "></div>
-                                                <div class="skill-percent">86%</div>
-                                            </div>
-                                        </div>
-                                        <div class="skill-item padd-15">
-                                            <h5>PHP</h5>
-                                            <div class="progress">
-                                                <div class="progress-in" style="width: 66%; "></div>
-                                                <div class="skill-percent">66%</div>
-                                            </div>
-                                        </div>
-                                        <div class="skill-item padd-15">
-                                            <h5>HTML</h5>
-                                            <div class="progress">
-                                                <div class="progress-in" style="width: 96%; "></div>
-                                                <div class="skill-percent">96%</div>
-                                            </div>
-                                        </div>
-                                        <div class="skill-item padd-15">
-                                            <h5>Bootstrap</h5>
-                                            <div class="progress">
-                                                <div class="progress-in" style="width: 76%; "></div>
-                                                <div class="skill-percent">76%</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="education padd-15">
-                                    <h3 class="title"> Education</h3>
-                                    <div class="row">
-                                        <div class="timeline-box padd-15">
-                                            <div class="timeline shadow-dark">
-                                                <!-- timeline item -->
-                                                <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-                                                    <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i> 2013 - 2015
-                                                    </h3>
-                                                    <h4 class="timeline-title">Master in Computer Science</h4>
-                                                    <p class="timeline-text">Lorem ipsum, dolor sit amet consectetur 
-                                                        adipisicing elit. Culpa aut fuga debitis at asperiores repudiandae
-                                                        incidunt blanditiis, dolores quo impedit, iusto cumque placeat,
-                                                        natus facere.</p>
-                                                </div>
-                                                <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-                                                    <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i> 2013 - 2015
-                                                    </h3>
-                                                    <h4 class="timeline-title">Master in Computer Science</h4>
-                                                    <p class="timeline-text">Lorem ipsum, dolor sit amet consectetur 
-                                                        adipisicing elit. Culpa aut fuga debitis at asperiores repudiandae
-                                                        incidunt blanditiis, dolores quo impedit, iusto cumque placeat,
-                                                        natus facere.</p>
-                                                </div>
-                                                <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-                                                    <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i> 2013 - 2015
-                                                    </h3>
-                                                    <h4 class="timeline-title">Master in Computer Science</h4>
-                                                    <p class="timeline-text">Lorem ipsum, dolor sit amet consectetur 
-                                                        adipisicing elit. Culpa aut fuga debitis at asperiores repudiandae
-                                                        incidunt blanditiis, dolores quo impedit, iusto cumque placeat,
-                                                        natus facere.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="experience padd-15">
-                                    <h3 class="title"> Experience</h3>
-                                    <div class="row">
-                                        <div class="timeline-box padd-15">
-                                            <div class="timeline shadow-dark">
-                                                <!-- timeline item -->
-                                                <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-                                                    <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i> 2013 - 2015
-                                                    </h3>
-                                                    <h4 class="timeline-title">Master in Computer Science</h4>
-                                                    <p class="timeline-text">Lorem ipsum, dolor sit amet consectetur 
-                                                        adipisicing elit. Culpa aut fuga debitis at asperiores repudiandae
-                                                        incidunt blanditiis, dolores quo impedit, iusto cumque placeat,
-                                                        natus facere.</p>
-                                                </div>
-                                                <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-                                                    <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i> 2013 - 2015
-                                                    </h3>
-                                                    <h4 class="timeline-title">Master in Computer Science</h4>
-                                                    <p class="timeline-text">Lorem ipsum, dolor sit amet consectetur 
-                                                        adipisicing elit. Culpa aut fuga debitis at asperiores repudiandae
-                                                        incidunt blanditiis, dolores quo impedit, iusto cumque placeat,
-                                                        natus facere.</p>
-                                                </div>
-                                                <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-                                                    <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i> 2013 - 2015
-                                                    </h3>
-                                                    <h4 class="timeline-title">Master in Computer Science</h4>
-                                                    <p class="timeline-text">Lorem ipsum, dolor sit amet consectetur 
-                                                        adipisicing elit. Culpa aut fuga debitis at asperiores repudiandae
-                                                        incidunt blanditiis, dolores quo impedit, iusto cumque placeat,
-                                                        natus facere.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- About Section End -->
-            <!-- Services Section Start -->
-            <section class="service section" id="service">
-                <div class="container">
-                    <div class="row">
-                        <div class="section-title padd-15">
-                            <h2>Services</h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <!-- Services Item Start -->
-                        <div class="service-item padd-15">
-                            <div class="service-item-inner">
-                                <div class="icon">
-                                    <i class="fa fa-mobile-alt"></i>
-                                </div>
-                                <h4>Web Design</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis et cumque perferendis!  
-                                </p>
-                            </div>
-                        </div>
-                        <!-- Services Item End -->
-                        <!-- Services Item Start -->
-                        <div class="service-item padd-15">
-                            <div class="service-item-inner">
-                                <div class="icon">
-                                    <i class="fa fa-laptop-code"></i>
-                                </div>
-                                <h4>Web Design</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis et cumque perferendis!  
-                                </p>
-                            </div>
-                        </div>
-                        <!-- Services Item End -->
-                        <!-- Services Item Start -->
-                        <div class="service-item padd-15">
-                            <div class="service-item-inner">
-                                <div class="icon">
-                                    <i class="fa fa-palette"></i>
-                                </div>
-                                <h4>Web Design</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis et cumque perferendis!  
-                                </p>
-                            </div>
-                        </div>
-                        <!-- Services Item End -->
-                        <!-- Services Item Start -->
-                        <div class="service-item padd-15">
-                            <div class="service-item-inner">
-                                <div class="icon">
-                                    <i class="fa fa-code"></i>
-                                </div>
-                                <h4>Web Design</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis et cumque perferendis!  
-                                </p>
-                            </div>
-                        </div>
-                        <!-- Services Item End -->
-                        <!-- Services Item Start -->
-                        <div class="service-item padd-15">
-                            <div class="service-item-inner">
-                                <div class="icon">
-                                    <i class="fa fa-search"></i>
-                                </div>
-                                <h4>Web Design</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis et cumque perferendis!  
-                                </p>
-                            </div>
-                        </div>
-                        <!-- Services Item End -->
-                        <!-- Services Item Start -->
-                        <div class="service-item padd-15">
-                            <div class="service-item-inner">
-                                <div class="icon">
-                                    <i class="fa fa-bullhorn"></i>
-                                </div>
-                                <h4>Web Design</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis et cumque perferendis!  
-                                </p>
-                            </div>
-                        </div>
-                        <!-- Services Item End -->
-                    </div>
-                </div>
-            </section>
-            <!-- Services Section End -->
-            <!-- Portfolio Section Start -->
-            <section class="portfolio section" id="portfolio">
-                <div class="container">
-                    <div class="row">
-                        <div class="section-title padd-15">
-                            <h2>Portfolio</h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="portfolio-heading padd-15">
-                            <h2>My Last Projects :</h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <!-- Portfolio Item Start -->
-                        <div class="portfolio-item padd-15">
-                            <div class="portfolio-item-inner">
-                                <div class="portfolio-img">
-                                    <img src="images/portfolio/portfolio-1.jpg" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Portfolio Item End -->
-                        <!-- Portfolio Item Start -->
-                        <div class="portfolio-item padd-15">
-                            <div class="portfolio-item-inner">
-                                <div class="portfolio-img">
-                                    <img src="images/portfolio/portfolio-2.jpg" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Portfolio Item End -->
-                        <!-- Portfolio Item Start -->
-                        <div class="portfolio-item padd-15">
-                            <div class="portfolio-item-inner">
-                                <div class="portfolio-img">
-                                    <img src="images/portfolio/portfolio-3.jpg" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Portfolio Item End -->
-                        <!-- Portfolio Item Start -->
-                        <div class="portfolio-item padd-15">
-                            <div class="portfolio-item-inner">
-                                <div class="portfolio-img">
-                                    <img src="images/portfolio/portfolio-4.jpg" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Portfolio Item End -->
-                        <!-- Portfolio Item Start -->
-                        <div class="portfolio-item padd-15">
-                            <div class="portfolio-item-inner">
-                                <div class="portfolio-img">
-                                    <img src="images/portfolio/portfolio-5.jpg" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Portfolio Item End -->
-                        <!-- Portfolio Item Start -->
-                        <div class="portfolio-item padd-15">
-                            <div class="portfolio-item-inner">
-                                <div class="portfolio-img">
-                                    <img src="images/portfolio/portfolio-6.jpg" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Portfolio Item End -->
-                    </div>
-                </div>
-            </section>
-            <!-- Portfolio Section End -->
-            <!-- Contact Section Start -->
-            <section class="contact section" id="contact">
-                <div class="container">
-                    <div class="row">
-                        <div class="section-title padd-15">
-                            <h2>Contact Me</h2>
-                        </div>
-                    </div>
-                    <h3 class="contact-title padd-15">Have you Any Questions ?</h3>
-                    <h4 class="contact-sub-title padd-15">I´M AT YOUR SERVICES</h4>
-                    <div class="row">
-                        <!-- Contact Info Item Start -->
-                        <div class="contact-info-item padd-15">
-                            <div class="icon"><i class="fa fa-phone"></i></div>
-                            <h4>Call Us On</h4>
-                            <p>+51 922 996 519</p>
-                        </div>
-                        <!-- Contact Info Item End -->
-                        <!-- Contact Info Item Start -->
-                        <div class="contact-info-item padd-15">
-                            <div class="icon"><i class="fa fa-map-marker-alt"></i></div>
-                            <h4>Office</h4>
-                            <p>Islamabad</p>
-                        </div>
-                        <!-- Contact Info Item End -->
-                        <!-- Contact Info Item Start -->
-                        <div class="contact-info-item padd-15">
-                            <div class="icon"><i class="fa fa-envelope"></i></div>
-                            <h4>Email</h4>
-                            <p>erick.ticona.dev@gmail.com</p>
-                        </div>
-                        <!-- Contact Info Item End -->
-                        <!-- Contact Info Item Start -->
-                        <div class="contact-info-item padd-15 hidden">
-                            <div class="icon"><i class="fa fa-globe-europe"></i></div>
-                            <h4>Website</h4>
-                            <p>www.domain.com</p>
-                        </div>
-                        <!-- Contact Info Item End -->
-                    </div>
-                    <h3 class="contact-title padd-15">SEND ME AN EMAIL</h3>
-                    <h4 class="contact-sub-title padd-15">I´M VERY RESPOSIVE TO MESSAGES</h4>
-                    <!-- Contact Form Start -->
-                    <div class="row">
-                        <div class="contact-form padd-15">
-                            <div class="row">
-                                <div class="form-item col-6 padd-15">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Name">
-                                    </div>
-                                </div>
-                                <div class="form-item col-6 padd-15">
-                                    <div class="form-group">
-                                        <input type="email" class="form-control" placeholder="Email">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="form-item col-12 padd-15">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Subject">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="form-item col-12 padd-15">
-                                    <div class="form-group">
-                                        <textarea name="" class="form-control" id="" placeholder="Message"></textarea>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="form-item col-12 padd-15">
-                                    <button type="submit" class="btn">Send Message</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Contact Form End -->
-                </div>
-            </section>
-            <!-- Contact Section End -->
-        </div>
-        <!-- Main Content End -->
+        </section>
+        
     </div>
-    <!-- Main Container End -->
-    <!-- Style Switcher Start -->
-    <div class="style-switcher">
-        <div class="style-switcher-toggler s-icon">
-            <i class="fas fa-cog fa-spin"></i>
-        </div>
-        <div class="day-night s-icon">
-            <i class="fas "></i>
-        </div>
-        <h4>Theme Colors</h4>
-        <div class="colors">
-            <span class="color-1" onclick="setActiveStyle('color-1')"></span>
-            <span class="color-2" onclick="setActiveStyle('color-2')"></span>
-            <span class="color-3" onclick="setActiveStyle('color-3')"></span>
-            <span class="color-4" onclick="setActiveStyle('color-4')"></span>
-            <span class="color-5" onclick="setActiveStyle('color-5')"></span>
-        </div>
+    <div class="container">
+        <!--ABOUT ME-->
+        <section id="about" class="about__me w-full min-h-screen flex align-items-center">
+            <div class="aboutMe__content min-h-full flex flex-column md:flex-row pt-8 md:pt-0">
+                <div class="aboutMe__info col-12 md:col-6 md:pr-6 pt-0">
+                    <h1 class="text-3xl md:text-5xl">Sobre mí</h1>
+                    <p class="text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        em magni harum sit eum aperiam repellat, incidunt provident dolor laborum animi
+                        nam eaque nobis illo est. Qui culpa itaque enim aspernatur?</p>
+                    <div class="knowledge flex flex-column gap-3 mt-5">
+                        <p>Wordpress 100%</p>
+                        <div class="progress__bar progress__wordpress">
+                            <span></span>
+                        </div>
+                        <p>HTML 75%</p>
+                        <div class="progress__bar progress__html">
+                            <span></span>
+                        </div>
+                        <p>Angular 80%</p>
+                        <div class="progress__bar progress__angular">
+                            <span></span>
+                        </div>
+                        <p>React Js 95%</p>
+                        <div class="progress__bar progress__reactJs">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="hireMe__button pt-4">
+                        <a href="mailTo:john@email.com" aria-label="Enviar mensaje al correo"
+                            class="cursor-pointer no-underline border-round-lg">Contratame</a>
+                    </div>
+
+                </div>
+                <div class="image col p-0 mt-6 md:mt-0">
+                    <img src="./assets/freelancer.jpg" alt="Foto relacionado a acerca de mí" width="100" height="100">
+                </div>
+            </div>
+        </section>
     </div>
-    <!-- Style Switcher End -->
-    <!-- JS Files-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
-    <script src="js/script.js"></script>
-    <script src="js/style-switcher.js"></script>
+    <!--FREE LANCER SECTION -->
+    <section class="freelancer mb-4 mt-4 min-w-full flex flex-column justify-content-center align-items-center">
+        <p class="text-sm">Tienes un proyecto en mente?</p>
+        <h1 class="text-center">Estoy disponible como freelancer</h1>
+        <div class="hireMe__button pt-4">
+            <a href="mailTo:john@email.com" aria-label="Enviar mensaje al correo"
+                class="cursor-pointer no-underline border-round-lg">Escríbeme</a>
+        </div>
+    </section>
+    <!--SERVICES -->
+    <div class="container">
+        <section id="services" class="services min-h-full w-full pb-7">
+            <div class="services__title flex flex-column gap-3 text-center">
+                <h1 class="text-3xl md:text-5xl">Mis servicios</h1>
+                <p class="text-gray-400 text-sm md:text-base">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum odit ab mollitia optio quod
+                    recusandae placeat aliquam veniam officiis cum quam eum architecto quidem, nobis commodi consequatur
+                    distinctio ullam non.
+                </p>
+            </div>
+            <div class="services__card w-full grid grid-nogutter mt-7 gap-5">
+                <div class="card flex align-items-center col-12 sm:col-6 lg:col-4 gap-3 p-2">
+                    <div class="service__logo flex align-items-center justify-content-center">
+                        <i class="fa-brands fa-html5"></i>
+                    </div>
+                    <div class="service__name">
+                        <p>HTML</p>
+                    </div>
+                </div>
+                <div class="card flex align-items-center col-12 sm:col lg:col-4 gap-3 p-2">
+                    <div class="service__logo flex align-items-center justify-content-center ">
+                        <i class="fa-brands fa-wordpress"></i>
+                    </div>
+                    <div class="service__name">
+                        <p>Wordpress</p>
+                    </div>
+                </div>
+                <div class="card flex align-items-center col-12 sm:col-6 md:col-3 lg:col gap-3 p-2">
+                    <div class="service__logo flex align-items-center justify-content-center ">
+                        <i class="fa-brands fa-angular"></i>
+                    </div>
+                    <div class="service__name">
+                        <p>Angular</p>
+                    </div>
+                </div>
+                <div class="card flex align-items-center col-12 sm:col md:col lg:col-4 gap-3 p-2">
+                    <div class="service__logo flex align-items-center justify-content-center ">
+                        <i class="fa-brands fa-react"></i>
+                    </div>
+                    <div class="service__name">
+                        <p>React Js</p>
+                    </div>
+                </div>
+                <div class="card flex align-items-center col-12 sm:col-6 md:col-4 lg:col-4 gap-3 p-2">
+                    <div class="service__logo flex align-items-center justify-content-center ">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                    </div>
+                    <div class="service__name">
+                        <p>Desarrollo Móvil</p>
+                    </div>
+                </div>
+                <div class="card flex align-items-center col-12 sm:col md:col-4 lg:col gap-3 p-2">
+                    <div class="service__logo flex align-items-center justify-content-center ">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <div class="service__name">
+                        <p>Desarrollo web</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--PORTFOLIO -->
+        <section id="portfolio" class="portfolio min-h-full w-full pb-8 pt-8">
+            <div class="portfolio__title flex flex-column gap-3 text-center">
+                <h1 class="text-3xl md:text-5xl">Mi trabajo</h1>
+                <p class="text-gray-400 text-sm md:text-base">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum odit ab mollitia optio quod
+                    recusandae placeat aliquam veniam officiis cum quam eum architecto quidem, nobis commodi consequatur
+                    distinctio ullam non.
+                </p>
+            </div>
+            <div class="portfolio__gallery">
+                <div class="gallery__categories mb-5 mt-5">
+                    <ul class="flex list-none flex-wrap justify-content-center gap-3">
+                        <li class="filter-item active" data-filter="all">Todos</li>
+                        <li class="filter-item " data-filter="gym">Gimnasio</li>
+                        <li class="filter-item " data-filter="tours__Web">Tours web</li>
+                        <li class="filter-item " data-filter="world__Tours">Inmobiliaria web</li>
+                        <li class="filter-item " data-filter="e__commerce">E-commerce</li>
+                    </ul>
+                </div>
+                <div class="proyect__gallery flex justify-content-center align-items-center flex-wrap gap-3">
+                    <div class="project__card tours__Web">
+                        <img src="./assets/proyecto-1.png" alt="">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Travel Tours</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam quae obcaecati amet
+                            </p>
+                            <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                        </div>
+                    </div>
+                    <div class="project__card e__commerce">
+                        <img src="./assets/proyecto-2.png" alt="">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Travel Tours</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam quae obcaecati amet
+                            </p>
+                            <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                        </div>
+                    </div>
+                    <div class="project__card tours__Web">
+                        <img src="./assets/proyecto-3.png" alt="">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Travel Tours</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam quae obcaecati amet
+                            </p>
+                            <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                        </div>
+                    </div>
+                    <div class="project__card gym">
+                        <img src="./assets/proyecto-4.jpeg" alt="">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Travel Tours</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam quae obcaecati amet
+                            </p>
+                            <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                        </div>
+                    </div>
+                    <div class="project__card world__Tours">
+                        <img src="./assets/proyecto-5.jpg" alt="">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Travel Tours</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam quae obcaecati amet
+                            </p>
+                            <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                        </div>
+                    </div>
+                    <div class="project__card tours__Web">
+                        <img src="./assets/proyecto-6.webp" alt="">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Travel Tours</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam quae obcaecati amet
+                            </p>
+                            <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--FOOTER -->
+        <footer id="contact" class="min-h-full w-full flex grid col-12 justify-content-center pb-8 pt-8 lg:text-center">
+            <div class="social__media col-12 md:col-4 flex flex-column justify-content-between">
+                <h3>Redes sociales</h3>
+                <p>Auténtico e innovador</p>
+                <p>Desarrollo lo que necesitas, con un enfoque en usabilidad y rendimiento</p>
+                <div class="social__mediaIcons mt-5 flex lg:justify-content-center gap-3">
+                    <a href="https://www.facebook.com" target="_blank" aria-label="Ir a facebook">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank" aria-label="Ir a instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com" target="_blank" aria-label="Ir a linkedin">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="contact col-12 sm:col-6 sm:pt-0 md:pt-2 md:col-4 flex flex-column justify-content-between md:align-items-center">
+                <h3>Contacto</h3>
+                <div class="phone__number flex align-items-center gap-2">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>+593 0953284694</p>
+                </div>
+                <div class="email flex align-items-center gap-2">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>john@email.com</p>
+                </div>
+                <a href="mailTo:john@email.com"
+                    class="cursor-pointer text-center col-4 sm:col-6 xl:col-4 mt-3 no-underline border-round-lg">
+                    <span>
+                        <i class="fa-solid fa-message"></i>
+                    </span>Escríbeme
+                </a>
+            </div>
+            <div class="my__services col-12 sm:col-6 sm:p-0 md:col-4 md:pt-2 md:align-items-center flex flex-column justify-content-between">
+                <h3>Mis Servicios</h3>
+                <p>Desarrollo web</p>
+                <p>Desarrollo móvil</p>
+                <p>Diseñador UI /UX</p>
+                <P>Marketing Digital</P>
+            </div>
+        </footer>
+    </div>
+
 </body>
+<script type="text/javascript">
+    /*
+    const navbar = document.querySelector(".header-portafolio");
+
+    window.onscroll = ()=>{
+        this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+    */
+
+    $(document).ready(function () {
+        $(window).scroll(function () {
+            // sticky navbar on scroll script
+            if (this.scrollY > 20) {
+            $(".navbar").addClass("sticky");
+            } else {
+            $(".navbar").removeClass("sticky");
+            }
+
+            // scroll-up button show/hide script
+            if (this.scrollY > 500) {
+            $(".scroll-up-btn").addClass("show");
+            } else {
+            $(".scroll-up-btn").removeClass("show");
+            }
+        });
+
+        // slide-up script
+        $(".scroll-up-btn").click(function () {
+            $("html").animate({ scrollTop: 0 });
+            // removing smooth scroll on slide-up button click
+            $("html").css("scrollBehavior", "auto");
+        });
+
+        $(".navbar .menu li a").click(function () {
+            // applying again smooth scroll on menu items click
+            $("html").css("scrollBehavior", "smooth");
+        });
+
+        // toggle menu/navbar script
+        $(".menu-btn").click(function () {
+            $(".navbar .menu").toggleClass("active");
+            $(".menu-btn i").toggleClass("active");
+        });
+
+        // typing text animation script
+        var typed = new Typed(".typing", {
+            strings: ["Programador", "Diseñador", "Desarrollador"],
+            typeSpeed: 100,
+            backSpeed: 60,
+            loop: true,
+        });
+
+        var typed = new Typed(".typing-2", {
+            strings: ["Programador", "Diseñador", "Desarrollador"],
+            typeSpeed: 100,
+            backSpeed: 60,
+            loop: true,
+        });
+
+        // owl carousel script
+        $(".carousel").owlCarousel({
+            margin: 20,
+            loop: true,
+            autoplay: true,
+            autoplayTimeOut: 2000,
+            autoplayHoverPause: true,
+            responsive: {
+            0: {
+                items: 1,
+                nav: false,
+            },
+            600: {
+                items: 2,
+                nav: false,
+            },
+            1000: {
+                items: 3,
+                nav: false,
+            },
+            },
+        });
+    });
+
+    const filterContainer = document.querySelector(".gallery__categories");
+    const galleryItems = document.querySelectorAll(".project__card");
+
+    filterContainer.addEventListener("click", (event) => {
+        if (event.target.classList.contains("filter-item")) {
+            filterContainer.querySelector(".active").classList.remove("active");
+            event.target.classList.add("active")
+            const filterValue = event.target.getAttribute("data-filter")
+            galleryItems.forEach(item => {
+                if (item.classList.contains(filterValue) || filterValue === "all") {
+                    item.classList.remove("hide")
+                    item.classList.add("show")
+                } else {
+                    item.classList.remove("show")
+                    item.classList.add("hide")
+                }
+            })
+        }
+    })
+
+    function scrollToSection(sectionId){
+        document.getElementById(sectionId).scrollIntoView({behavior:'smooth'});
+    }
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
+<script src="./js/main.js"></script>
+
 </html>
