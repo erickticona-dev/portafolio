@@ -956,7 +956,7 @@ footer .arriba{
     margin: 0 10px;
   }
   .swiper-navBtn{
-    display: none;
+    display: none!important;
   }
 }
 
