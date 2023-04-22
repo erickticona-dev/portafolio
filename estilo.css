@@ -958,6 +958,14 @@ footer .arriba{
   .swiper-navBtn{
     display: none!important;
   }
+
+  .swiper-button-next{
+    display: none!important;
+  }
+
+  .swiper-button-prev{
+    display: none!important;
+  }
 }
 
 
