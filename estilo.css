@@ -10,6 +10,15 @@ html{
     scroll-behavior: smooth;
 }
 
+.button-download{
+    text-decoration: none;
+}
+
+.fila{
+    padding-top: 60px;
+}
+
+
 /* MENU */
 .contenedor-header{
     background: #1e2326;
@@ -840,7 +849,7 @@ footer .arriba{
 }
 
 .mcard:hover{
-    transform: translateY(-5px) scale(1.005)
+    transform: translateY(0px) scale(1.005)
         translateZ(0);
     box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11);
     color: var(--bg-color-logo);
@@ -917,7 +926,7 @@ footer .arriba{
 .slide-container{
   max-width: 1000px;
   width: 100%;
-  height: 350px;
+  height: 420px;
   padding: 40px 0;
 }
 .slide-content{
