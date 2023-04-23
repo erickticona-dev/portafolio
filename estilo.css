@@ -223,7 +223,7 @@ html{
     width: 100%;
 }
 
-.curriculum button{
+.experiencia button{
     cursor: pointer;
     background-color: transparent;
     border: 2px solid #fff;
@@ -236,7 +236,7 @@ html{
     position: relative;
     z-index: 10;
 }
-.curriculum button .overlay{
+.experiencia button .overlay{
     position: absolute;
     top: 0;
     left: 0;
@@ -246,59 +246,59 @@ html{
     z-index: -1;
     transition: 1s;
 }
-.curriculum button:hover .overlay{
+.experiencia button:hover .overlay{
     width: 100%;
 }
 
 /* SECCION S K I L L S */
-.skills{
+.conocimientos{
     background-color: #252A2E;
     color: #fff;
     padding: 50px 20px;
 }
-.skills .contenido-seccion{
+.conocimientos .contenido-seccion{
     max-width: 1100px;
     margin: auto;
 }
-.skills h2{
+.conocimientos h2{
     font-size: 48px;
     font-family: 'Righteous';
     text-align: center;
     padding: 20px 0;
 
 }
-.skills .fila{
+.conocimientos .fila{
     display: flex;
 }
-.skills .fila .col{
+.conocimientos .fila .col{
     width: 50%;
     padding: 0 20px;
 }
-.skills .fila .col h3{
+.conocimientos .fila .col h3{
     font-size: 28px;
     font-family: 'Righteous';
     margin-bottom: 25px;
 }
-.skills .skill > span{
+.conocimientos .skill > span{
     font-weight: bold;
     display: block;
     margin-bottom: 10px;
 }
-.skills .skill .barra-skill{
+.conocimientos .skill .barra-skill{
     height: 8px;
     width: 80%;
     background-color: #131517;
     position: relative;
     margin-bottom: 30px;
 }
-.skills .skill .progreso{
+.conocimientos .skill .progreso{
     background-color: #1CB698;
     position: absolute;
     top: 0;
     left: 0;
     height: 8px;
 }
-.skills .skill .barra-skill span{
+.conocimientos .skill .barra-skill span{
     position: absolute;
     height: 40px;
     width: 40px;
@@ -311,7 +311,7 @@ html{
     font-size: 14px;
 }
 /* Estas clases se agregaran dinamicamente mediante javascript */
-.skills .skill .javascript{
+.conocimientos .skill .javascript{
     width: 0%;
     animation: 2s javascript forwards;
 }
@@ -320,7 +320,7 @@ html{
     100%{width: 25%;}
 }
 
-.skills .skill .htmlcss{
+.conocimientos .skill .htmlcss{
     width: 0%;
     animation: 2s htmlcss forwards;
 }
@@ -329,7 +329,7 @@ html{
     100%{width: 89%;}
 }
 
-.skills .skill .photoshop{
+.conocimientos .skill .photoshop{
     width: 0%;
     animation: 2s photoshop forwards;
 }
@@ -338,7 +338,7 @@ html{
     100%{width: 95%;}
 }
 
-.skills .skill .wordpress{
+.conocimientos .skill .wordpress{
     width: 0%;
     animation: 2s wordpress forwards;
 }
@@ -347,7 +347,7 @@ html{
     100%{width: 81%;}
 }
 
-.skills .skill .drupal{
+.conocimientos .skill .drupal{
     width: 0%;
     animation: 2s drupal forwards;
 }
@@ -356,7 +356,7 @@ html{
     100%{width: 55%;}
 }
 
-.skills .skill .comunicacion{
+.conocimientos .skill .comunicacion{
     width: 0%;
     animation: 2s comunicacion forwards;
 }
@@ -365,7 +365,7 @@ html{
     100%{width: 80%;}
 }
 
-.skills .skill .trabajo{
+.conocimientos .skill .trabajo{
     width: 0%;
     animation: 2s trabajo forwards;
 }
@@ -374,7 +374,7 @@ html{
     100%{width: 70%;}
 }
 
-.skills .skill .creatividad{
+.conocimientos .skill .creatividad{
     width: 0%;
     animation: 2s creatividad forwards;
 }
@@ -383,7 +383,7 @@ html{
     100%{width: 99%;}
 }
 
-.skills .skill .dedicacion{
+.conocimientos .skill .dedicacion{
     width: 0%;
     animation: 2s dedicacion forwards;
 }
@@ -392,7 +392,7 @@ html{
     100%{width: 65%;}
 }
 
-.skills .skill .proyect{
+.conocimientos .skill .proyect{
     width: 0%;
     animation: 2s proyect forwards;
 }
@@ -400,75 +400,75 @@ html{
     0%{width: 0%;}
     100%{width: 94%;}
 }
-/* SECCION CURRICULUM */
-.curriculum{
+/* SECCION experiencia */
+.experiencia{
     background-color: #1e2326;
     color: #fff;
     padding: 50px 20px;
 }
-.curriculum .contenido-seccion{
+.experiencia .contenido-seccion{
     max-width: 1100px;
     margin: auto;
 }
-.curriculum h2{
+.experiencia h2{
     font-size: 48px;
     font-family: 'Righteous';
     text-align: center;
     padding: 20px 0;
 
 }
-.curriculum .fila{
+.experiencia .fila{
     display: flex;
     justify-content: space-between;
 }
-.curriculum .fila .col{
+.experiencia .fila .col{
     width: 49%;
     padding: 0 20px;
 }
-.curriculum .fila .col h3{
+.experiencia .fila .col h3{
     font-size: 28px;
     font-family: 'Righteous';
     margin-bottom: 25px;
 }
-.curriculum .fila .izquierda{
+.experiencia .fila .izquierda{
     border-right: 2px solid #252A2E;
 }
-.curriculum .fila .derecha{
+.experiencia .fila .derecha{
     border-left: 2px solid #252A2E;
 }
-.curriculum .fila .item{
+.experiencia .fila .item{
     padding: 25px;
     margin-bottom: 30px;
     background-color: #252A2E;
     position: relative;
 }
-.curriculum .fila .item h4{
+.experiencia .fila .item h4{
     font-size: 20px;
     margin-bottom: 10px;
 }
-.curriculum .fila .item .casa{
+.experiencia .fila .item .casa{
     color: #1CB698;
     font-size: 22px;
     font-weight: bold;
     display: block;
 }
-.curriculum .fila .item .fecha{
+.experiencia .fila .item .fecha{
     display: block;
     color: #1CB698;
     margin-bottom: 10px;
 }
-.curriculum .fila .item p{
+.experiencia .fila .item p{
     line-height: 24px;
 }
-.curriculum .fila .izq{
+.experiencia .fila .izq{
     border-right: 2px solid #1CB698;
     margin-right: 20px;
 }
-.curriculum .fila .der{
+.experiencia .fila .der{
     border-left: 2px solid #1CB698;
     margin-left: 20px;
 }
-.curriculum .fila .item .conectori{
+.experiencia .fila .item .conectori{
     height: 2px;
     background-color: #1CB698;
     width: 47px;
@@ -477,7 +477,7 @@ html{
     right: -47px;
     z-index: 5;
 }
-.curriculum .fila .item .conectori .circuloi{
+.experiencia .fila .item .conectori .circuloi{
     display: block;
     height: 10px;
     width: 10px;
@@ -487,7 +487,7 @@ html{
     position: relative;
     bottom: 4px;
 }
-.curriculum .fila .item .conectord{
+.experiencia .fila .item .conectord{
     height: 2px;
     background-color: #1CB698;
     width: 47px;
@@ -496,7 +496,7 @@ html{
     left: -47px;
     z-index: 5;
 }
-.curriculum .fila .item .conectord .circulod{
+.experiencia .fila .item .conectord .circulod{
     display: block;
     height: 10px;
     width: 10px;
@@ -717,23 +717,23 @@ footer .arriba{
         width: fit-content;
     }
 
-    .skills .fila{
+    .conocimientos .fila{
         display: block;
     }
-    .skills .fila .col{
+    .conocimientos .fila .col{
         width: 100%;
     }
-    .skills .fila .col .barra-skill{
+    .conocimientos .fila .col .barra-skill{
         width: 100%;
     }
 
-    .curriculum .fila{
+    .experiencia .fila{
         display: block;
     }
-    .curriculum .fila .col{
+    .experiencia .fila .col{
         width: 90%;
     }
-    .curriculum .fila .derecha{
+    .experiencia .fila .derecha{
         margin-left: 20px;
     }
 
