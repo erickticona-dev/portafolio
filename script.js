@@ -15,11 +15,6 @@ function seleccionar(){
     document.getElementById("nav").classList = "";
     menuVisible = false;
 }
-
-//detecto el scrolling para aplicar la animacion de la barra de habilidades
-window.onscroll = function(){
-    efectoHabilidades();
-} 
  
 var swiper = new Swiper(".slide-content", {
     slidesPerView: 3,
@@ -50,3 +45,19 @@ var swiper = new Swiper(".slide-content", {
         },
     },
   });
+
+
+
+  //Script del Formulario de Contacto
+  const $form = document.querySelector('#form')
+  const $buttonMailTo = document.querySelector('#hrefmail')
+
+  $form.addEventListener('submit', handleSubmit)
+
+  function handleSubmit(event) {
+    event.preventDefault()
+    const form = new FormData(this)
+    console.log(form.get('name'))
+    $buttonMailTo.setAttribute('href', `mailto:erick.ticona.dev@gmail.com?subject=${form.get('name')} ${form.get('email')}&body=${form.get('message')}`)
+    $buttonMailTo.click()
+  }
