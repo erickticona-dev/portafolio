@@ -798,6 +798,13 @@ footer .arriba{
     --bg-color-light: #E2FCED;
 }
 
+.elementor{
+    --bg-color-logo: #FF7262;
+    --bg-color: #FF7262;
+    --bg-color-light: #E2FCED;
+    fill: red;
+}
+
 .figma{
     --bg-color-logo: #1E1E1E;
     --bg-color: #1E1E1E;
