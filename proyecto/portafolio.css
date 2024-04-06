@@ -1,0 +1,303 @@
+*{
+	background:rgba(30,35,38,1);
+}
+
+/*
+	@name portafolio
+*/
+/* Only edit this if you know what you are doing! */
+body { margin: 0px; padding: 0px; font-family:"Arial"; overflow-x:hidden; }
+
+/* Only edit this if you know what you are doing! */
+img { position: absolute; display: block; margin: 0px; border: none; padding: 0px; }
+
+/* Only edit this if you know what you are doing! */
+div { position: absolute; }
+
+#content-container { display: block; position: relative; width: 1360px; width: 1360px; height: 1440px; overflow: hidden; display: block;  margin-left: auto; margin-right: auto;  }
+
+
+#page_portafolio_ek1 {
+	top: 0px;
+	left: 0px;
+	width: 1360px;
+	height: 1440px;
+}
+
+#_bg__portafolio_ek2 {
+	top: 0px;
+	left: 0px;
+	width: 1360px;
+	height: 1440px;
+	background:rgba(30,35,38,1);
+}
+
+#secci_n_hero {
+	top: 0px;
+	left: 0px;
+	width: 1360px;
+	height: 720px;
+}
+
+#_bg__secci_n_hero_ek1 {
+	top: 0px;
+	left: 0px;
+	width: 1360px;
+	height: 720px;
+	background-image:url("/skins/low-code-high-value-how-ai-is-catalyzing-low-code-and-no-code\ 2.webp");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#frame_1 {
+	top: 0px;
+	left: 0px;
+	width: 1360px;
+	height: 720px;
+}
+
+#_bg__frame_1_ek1 {
+	opacity:0.65;
+	top: 0px;
+	left: 0px;
+	width: 1360px;
+	height: 720px;
+	background:rgba(30,35,38,1);
+}
+
+#contenedor_perfil {
+	top: 60px;
+	left: 459px;
+	width: 442px;
+	height: 551.16px;
+}
+
+#_bg__contenedor_perfil_ek1 {
+	top: 0px;
+	left: 0px;
+	width: 442px;
+	height: 551.16px;
+	-ms-border-radius: 20px;
+	-o-border-radius: 20px;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+	background:rgba(30,35,38,1);
+}
+
+
+#image_1 {
+	top: 46px;
+	left: 116px;
+	width: 202px;
+	height: 204px;
+}
+
+#contenedor_iconos {
+	top: 284px;
+	left: 181px;
+	width: 80px;
+	height: 20.16px;
+}
+
+#_bg__contenedor_iconos_ek1 {
+	top: 0px;
+	left: 0px;
+	width: 80px;
+	height: 20.16px;
+	background:#;
+}
+
+#icono_github {
+	top: -2.52px;
+	left: -7.5px;
+	width: 25px;
+	height: 25.2px;
+}
+
+#_bg__icono_github_ek1 {
+	top: 0px;
+	left: 0px;
+	width: 25px;
+	height: 25.2px;
+	background:#;
+}
+
+
+#vector {
+	top: 0px;
+	left: 0px;
+	width: 25px;
+	height: 25.2px;
+}
+
+#icono_linkedin {
+	top: -2.52px;
+	left: 27.5px;
+	width: 25px;
+	height: 25.2px;
+}
+
+#_bg__icono_linkedin_ek1 {
+	top: 0px;
+	left: 0px;
+	width: 25px;
+	height: 25.2px;
+	background:#;
+}
+
+
+#vector_ek1 {
+	top: 0px;
+	left: 0px;
+	width: 25px;
+	height: 25.2px;
+}
+
+#icono_whatsapp {
+	top: -2.52px;
+	left: 62.5px;
+	width: 25px;
+	height: 25.2px;
+}
+
+#_bg__icono_whatsapp_ek1 {
+	top: 0px;
+	left: 0px;
+	width: 25px;
+	height: 25.2px;
+	background:#;
+}
+
+
+#vector_ek2 {
+	top: 0px;
+	left: 0px;
+	width: 25px;
+	height: 25.2px;
+}
+
+#contenedor_nombre {
+	top: 334.16px;
+	left: 40px;
+	width: 362px;
+	height: 98px;
+}
+
+#_bg__contenedor_nombre_ek1 {
+	top: 0px;
+	left: 0px;
+	width: 362px;
+	height: 98px;
+	background:#;
+}
+
+
+#profesional_en_desarrollo_web_y_dise_ador_ui_ux {
+	top: 0px;
+	left: 37px;
+	width: 289px;
+	height: 38.8px;
+	overflow: hidden;
+	font-family: Work Sans;
+	font-size: 18px;
+	text-align: center;
+	color:#FFFFFF;
+}
+
+
+#erick_ticona {
+	top: 53px;
+	left: -11px;
+	width: 373.4px;
+	height: 64.4px;
+	overflow: hidden;
+	font-family: Righteous;
+	font-size: 64px;
+	text-align: center;
+	line-height: 36px;
+	padding-top: 28px;
+	margin-top: -28px;
+	color:#1CB698;
+}
+
+#boton_cv {
+	top: 462.16px;
+	left: 123.5px;
+	width: 195px;
+	height: 39px;
+}
+
+#_bg__boton_cv_ek1 {
+	top: 0px;
+	left: 0px;
+	width: 195px;
+	height: 39px;
+	-ms-border-radius: 15px;
+	-o-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+	-ms-box-shadow:0px 0px 10px 1px rgba(28,182,152,0.5);
+	-o-box-shadow:0px 0px 10px 1px rgba(28,182,152,0.5);
+	-webkit-box-shadow:0px 0px 10px 1px rgba(28,182,152,0.5);
+	-moz-box-shadow:0px 0px 10px 1px rgba(28,182,152,0.5);
+	box-shadow:0px 0px 10px 1px rgba(28,182,152,0.5);
+	background:rgba(28,182,152,1);
+}
+
+
+#descargar_cv {
+	top: 13.5px;
+	left: 17px;
+	width: 125px;
+	height: 17.8px;
+	overflow: hidden;
+	font-family: Work Sans;
+	font-size: 18px;
+	text-align: center;
+	color:#FFFFFF;
+}
+
+#layer_1 {
+	top: 10px;
+	left: 148px;
+	width: 27px;
+	height: 19px;
+}
+
+#_bg__layer_1_ek1 {
+	top: 0px;
+	left: 0px;
+	width: 27px;
+	height: 19px;
+	background:#;
+}
+
+
+#vector_ek3 {
+	top: 0px;
+	left: 0px;
+	width: 27px;
+	height: 19px;
+}
+
+#secci_n_hero_ek2 {
+	top: 720px;
+	left: 0px;
+	width: 1360px;
+	height: 720px;
+}
+
+#_bg__secci_n_hero_ek3 {
+	top: 0px;
+	left: 0px;
+	width: 1360px;
+	height: 720px;
+	background:#;
+}
+
+
+
+/* Add your custom CSS here */
