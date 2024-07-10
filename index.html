@@ -1,564 +1,1078 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Portafolio - Anderson Erick Ticona Cordova</title>
-    <link rel="stylesheet" href="estilo.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-</head>
-<body>
-    <!-- MENU ENCABEZADO -->
-    <div class="contenedor-header">
-        <header>
-            <div class="logo">
-                <a href="#">AETC</a>
-            </div>
-            <nav id="nav">
-                <ul>
-                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
-                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
-                    <li><a href="#conocimientos" onclick="seleccionar()">CONOCIMIENTOS</a></li>
-                    <li><a href="#experiencia" onclick="seleccionar()">EXPERIENCIA</a></li>
-                    <li><a href="#portfolio" onclick="seleccionar()">PORTAFOLIO</a></li>
-                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
-                </ul>
-            </nav>
-            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-        </header>
-    </div>
+<html lang="en">
 
-    <!-- SECCION INICIO -->
-    <section id="inicio" class="inicio">
-        <div class="contenido-banner">
-            <div class="contenedor-img">
-                <img src="img/hero.jpg" alt="">
+<head>
+    <!-- ========== Meta Tags ========== -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Portafolio - Anderson Erick Ticona Cordova">
+
+    <!-- ========== Page Title ========== -->
+    <title>Portafolio - Anderson Erick Ticona Cordova</title>
+
+    <!-- ========== Favicon Icon ========== -->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+    <!-- ========== Start Stylesheet ========== -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/flaticon-set.css" rel="stylesheet">
+    <link href="assets/css/swiper-bundle.min.css" rel="stylesheet">
+    <link href="assets/css/animate.min.css" rel="stylesheet">
+    <link href="assets/css/validnavs.css" rel="stylesheet">
+    <link href="assets/css/helper.css" rel="stylesheet">
+    <link href="assets/css/unit-test.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <!-- ========== End Stylesheet ========== -->
+
+    <!--[if lte IE 9]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
+
+</head>
+
+<body class="bg-dark onepage-version bg-fixed" style="background-image: url(assets/img/shape/banner-1.png);">
+
+    <!-- Start Preloader 
+    ============================================= -->
+    <div id="preloader">
+        <div id="ventix-preloader" class="ventix-preloader">
+            <div class="animation-preloader">
+                <div class="spinner"></div>
             </div>
-            <h1>Erick Ticona</h1>
-            <h2>Profesional en Desarrollo Web y Diseñador UI/UX</h2>
-            <div class="redes">
-                <a href="https://github.com/erickticona-dev"><i class="fa-brands fa-github"></i></a>
-                <a href="https://linkedin.com/in/anderson-erick-ticona-cordova"><i class="fa-brands fa-linkedin-in"></i></a>
+            <div class="loader">
+                <div class="row">
+                    <div class="col-3 loader-section section-left">
+                        <div class="bg"></div>
+                    </div>
+                    <div class="col-3 loader-section section-left">
+                        <div class="bg"></div>
+                    </div>
+                    <div class="col-3 loader-section section-right">
+                        <div class="bg"></div>
+                    </div>
+                    <div class="col-3 loader-section section-right">
+                        <div class="bg"></div>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
+    </div>
+    <!-- End Preloader -->
+    
 
-    <!-- SECCION SOBRE MI -->
-    <section id="sobremi" class="sobremi">
-        <div class="contenido-seccion">
-            <h2>Sobre Mí</h2>
-            <p style="padding-top: 60px;"><span>Hola, soy Erick Ticona.</span> Soy una persona curiosa y apasionada por el aprendizaje, siempre estoy buscando oportunidades para adquirir nuevos conocimientos y habilidades.</p>
+    <!-- Header 
+    ============================================= -->
+    <header>
+        <!-- Start Navigation -->
+        <nav class="navbar mobile-sidenav onepage-menu mobile-nav-only attr-border navbar-sticky navbar-default validnavs navbar-fixed dark no-background">
 
-            <div class="fila">
-                <!-- datos personales -->
-                <div class="col">
-                    <h3>Datos Personales</h3>
-                    <ul>
+
+            <div class="container d-flex justify-content-between align-items-center">            
+
+                <!-- Start Header Navigation -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <!--  
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/img/logo-light.png" class="logo" alt="Logo">
+                    </a>
+                    -->
+                </div>
+                <!-- End Header Navigation -->
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="navbar-menu">
+                    <div class="space-collapse"></div>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                        <i class="fa fa-times"></i>
+                    </button>
+                    
+                    <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
                         <li>
-                            <strong>DNI</strong>
-                            72851992
+                            <a class="smooth-menu" href="#home">Inicio</a>
                         </li>
                         <li>
-                            <strong>Cumpleaños</strong>
-                            11-09-2000
+                            <a class="smooth-menu" href="#services">Services</a>
                         </li>
                         <li>
-                            <strong>Teléfono</strong>
-                            +51 922996519
+                            <a class="smooth-menu" href="#about">About</a>
                         </li>
                         <li>
-                            <strong>Email</strong>
-                            erick.ticona.dev@gmail.com
+                            <a class="smooth-menu" href="#portfolio">Portfolio</a>
                         </li>
                         <li>
-                            <strong>Sitio Web</strong>
-                            https://erickticona-dev.github.io/portafolio/
+                            <a class="smooth-menu" href="#blog">blog</a>
                         </li>
                         <li>
-                            <strong>Dirección</strong>
-                            Perú, Lima
-                        </li>
-                        <li>
-                            <strong>Cargo Actual</strong>
-                            <span>Desarrollador Web</span>
+                            <a class="smooth-menu" href="#contact">contact</a>
                         </li>
                     </ul>
-                </div>
+                </div><!-- /.navbar-collapse -->
 
-                <!-- intereses -->
-                <div class="col">
-                    <h3>Intereses</h3>
-                    <div class="contenedor-intereses">
-                        <div class="interes">
-                            <i class="fa-solid fa-gamepad"></i>
-                            <span>JUEGOS</span>
+                <!-- Main Nav -->
+            </div>   
+            <!-- Overlay screen for menu -->
+            <div class="overlay-screen"></div>
+            <!-- End Overlay screen for menu -->
+        </nav>
+        <!-- End Navigation -->
+    </header>
+    <!-- End Header -->
+
+    <div class="main-wrapper">
+        <!-- Start Side Navbar 
+        ============================================= -->
+        <div class="side-navbar-items">
+
+            <div class="nav-wrapper">
+                <div class="side-navbar">
+                    <div class="side-nav-menu">
+                        <!--
+                        <a class="smooth-menu" href="#home"><img src="assets/img/logo-icon.png" alt="Logo"></a>
+                        -->
+                    </div>
+                    <div class="nav-toggle">
+                        <img src="assets/img/menu-white.svg" alt="Menu">
+                    </div>
+                    <div class="author-social">
+                        <input type="checkbox" id="toggle" class="share-toggle" hidden="">
+                        <label for="toggle" class="share-button">
+                            <i class="fas fa-plus"></i>
+                        </label>
+                        <a href="https://api.whatsapp.com/send?phone=51922996519&text" class="share-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/anderson-erick-ticona-cordova/" class="share-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="container">
+                <div class="nav-side">
+                    <div class="nav-items simple-menu">
+
+                        <div class="nav-toggle"><i class="fas fa-times"></i></div>
+
+
+                        <div class="nav-item dropdown">
+                            <a class="smooth-menu" href="#home">Home</a>
+                            <div class="nav-item-wrapper"></div>
                         </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-headphones"></i>
-                            <span>MUSICA</span>
+                        <div class="nav-item">
+                            <a class="smooth-menu" href="#services">Servicios</a>
+                            <div class="nav-item-wrapper"></div>
                         </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-laptop-code"></i>
-                            <span>PROGRAMAR</span>
+                        <div class="nav-item">
+                            <a class="smooth-menu" href="#about">Sobre mí</a>
+                            <div class="nav-item-wrapper"></div>
                         </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-computer"></i>
-                            <span>EMSAMBLAJE</span>
+                        <div class="nav-item">
+                            <a class="smooth-menu" href="#portfolio">Portafolio</a>
+                            <div class="nav-item-wrapper"></div>
                         </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-book"></i>
-                            <span>LECTURA</span>
+                        <div class="nav-item">
+                            <a class="smooth-menu" href="#contact">Contacto</a>
+                            <div class="nav-item-wrapper"></div>
                         </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-film"></i>
-                            <span>PELICULAS</span>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Side Navbar -->
+
+        <!-- Start Banner
+        ============================================= -->
+        <div id="home" class="banner-style-one-area default-padding">
+            <div class="container">
+                <div class="banner-top">
+                    <div class="row align-center">
+                        <div class="col-lg-7 pr-50 pr-md-15 pr-xs-15">
+                            <div class="information">
+                                <div class="content">
+                                    <h2>Hola <img src="assets/img/shape/harnd.png" alt="image not found"> , Soy <br>Erick Ticona</h2>
+                                    <p>
+                                        Hola, Soy Erick Ticona. Soy una persona curiosa y apasionada por el aprendizaje, siempre estoy buscando oportunidades para adquirir nuevos conocimientos y habilidades. 
+                                    </p>
+                                    <a href="#contact" class="btn-standard mt-10 smooth-menu">Contáctame</a>
+                                </div>
+                                <div class="profile-grid">
+                                    <ul>
+                                        <li>
+                                            <a class="smooth-menu" href="#services">
+                                                Servicios
+                                                <div class="icon-list">
+                                                    <img src="assets/img/icon/figma.png" alt="Image not Found">
+                                                    <img src="assets/img/icon/wordpress.png" alt="Image not Found">
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="smooth-menu" href="#portfolio">
+                                                Proyectos
+                                                <img src="assets/img/shape/laptop.png" alt="Image Not Found">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="smooth-menu" href="#about">
+                                                Sobre mí
+                                                <strong>T</strong>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
+                        <div class="col-lg-5">
+                            <div class="thumb">
+                                <img src="assets/img/illustration/1.png" alt="Image Not Found">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Banner -->
+        
+        <!-- Start Services
+        ============================================= -->
+        <div id="services" class="services-style-one-area default-padding-top mb--50">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="left-heading mb-50">
+                            <h4 class="sub-title">What i do</h4>
+                            <h2 class="title">My Specializations</h2>
+                            <div class="devider"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <!-- Single Item -->
+                    <div class="service-style-one col-lg-6 col-md-6">
+                        <div class="service-style-one-item">
+                            <div class="thumb">
+                                <img src="assets/img/icon/web-design.png" alt="Icon">
+                            </div>
+                            <div class="info">
+                                <h4><a href="#" data-bs-toggle="modal" data-bs-target="#serviceSingleModal">Website design</a></h4>
+                                <p>
+                                    Continue indulged speaking the was horrible for domestic position. Seeing get rather her you not esteem men settle is genius take excuse. Deal say over you age comparison new ham melancholy.
+                                </p>
+                                <div class="bottom">
+                                    <span>28 Projects</span>
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#serviceSingleModal"><i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Item -->
+                    <!-- Single Item -->
+                    <div class="service-style-one col-lg-6 col-md-6">
+                        <div class="service-style-one-item">
+                            <div class="thumb">
+                                <img src="assets/img/icon/app-development.png" alt="Icon">
+                            </div>
+                            <div class="info">
+                                <h4><a href="#" data-bs-toggle="modal" data-bs-target="#serviceSingleModal">App Development</a></h4>
+                                <p>
+                                    Continue indulged speaking the was horrible for domestic position. Seeing get rather her you not esteem men settle is genius take excuse. Deal say over you age comparison new ham melancholy.
+                                </p>
+                                <div class="bottom">
+                                    <span>1K Projects</span>
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#serviceSingleModal"><i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Item -->
+                    <!-- Single Item -->
+                    <div class="service-style-one col-lg-6 col-md-6">
+                        <div class="service-style-one-item">
+                            <div class="thumb">
+                                <img src="assets/img/icon/camera.png" alt="Icon">
+                            </div>
+                            <div class="info">
+                                <h4><a href="#" data-bs-toggle="modal" data-bs-target="#serviceSingleModal">UX/UI Design</a></h4>
+                                <p>
+                                    Continue indulged speaking the was horrible for domestic position. Seeing get rather her you not esteem men settle is genius take excuse. Deal say over you age comparison new ham melancholy.
+                                </p>
+                                <div class="bottom">
+                                    <span>74 Projects</span>
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#serviceSingleModal"><i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Item -->
+                    <!-- Single Item -->
+                    <div class="service-style-one col-lg-6 col-md-6">
+                        <div class="service-style-one-item button">
+                            <a class="hire-btn" href="#contact">hire me</a>
+                        </div>
+                    </div>
+                    <!-- End Single Item -->
+                </div>
+            </div>
+
+            <!-- Start Services Single Modal -->
+            <div class="modal fade" id="serviceSingleModal" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                    <div class="modal-content">
                         
+                        <div class="modal-body">
+
+                            <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+
+                            <div class="services-details-area">
+                                <div class="container">
+                                    <div class="services-details-items">
+                                        <div class="row">
+                                            
+                                            <div class="col-xl-12 services-single-content">
+                                                <div class="service-single-thumb">
+                                                    <img src="assets/img/1500x800.png" alt="Thumb">
+                                                </div>
+                                                <h2>Best influencer marketing services</h2>
+                                                <p>
+                                                    We denounce with righteous indige nation and dislike men who are so beguiled and demo realized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue cannot foresee. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled data structures manages data in technology.
+                                                </p>
+                                                <div class="features mt-40 mt-xs-30 mb-30 mb-xs-20">
+                                                    <div class="row">
+                                                        <div class="col-lg-5 col-md-6">
+                                                            <div class="content">
+                                                                <h3>Included Services</h3>
+                                                                <ul class="feature-list-item">
+                                                                    <li>Monthly SEO Task</li>
+                                                                    <li>24/7 Alltime Supporting</li>
+                                                                    <li>Turbo Boosting</li>
+                                                                    <li>Expert Team Members</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-7 col-md-6 mt-xs-30">
+                                                            <div class="content">
+                                                                <h3>The Challange</h3>
+                                                                <p>
+                                                                    Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias. consequatur aut perferendis doloribus.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <h3>What we do?</h3>
+                                                <p>
+                                                    Nam libero tempore, cum soluta nobis est elig endi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repelle ndus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias. consequatur aut perferendis doloribus asperiores repellat. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.  pleasures have to be repudiated and annoyances accepted. 
+                                                </p>
+                        
+                        
+                                                <div class="faq-style-one mt-40">
+                                                    <h2 class="mb-20">Any Questions find here.</h2>
+                                                    <div class="accordion" id="faqAccordion">
+                                                        <div class="accordion-item">
+                                                            <h2 class="accordion-header" id="headingOne">
+                                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                                    Business Innovation
+                                                                </button>
+                                                            </h2>
+                                                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                                                                <div class="accordion-body">
+                                                                    <p>
+                                                                        Bennings appetite disposed me an at subjects an. To no indulgence diminution so discovered mr apartments. Are off under folly death wrote cause her way spite. Plan upon yet way. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains. pleasures have to be repudiated and annoyances accepted. Nam libero tempore, cum soluta nobis est elig endi optio cumque 
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="accordion-item">
+                                                            <h2 class="accordion-header" id="headingTwo">
+                                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                                    Search Engine Optimization
+                                                                </button>
+                                                            </h2>
+                                                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                                                                <div class="accordion-body">
+                                                                    <p>
+                                                                        Bennings appetite disposed me an at subjects an. To no indulgence diminution so discovered mr apartments. Are off under folly death wrote cause her way spite. Plan upon yet way. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains. pleasures have to be repudiated and annoyances accepted. Nam libero tempore, cum soluta nobis est elig endi optio cumque 
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="accordion-item">
+                                                            <h2 class="accordion-header" id="headingThree">
+                                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                                    Thinking Differently
+                                                                </button>
+                                                            </h2>
+                                                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                                                                <div class="accordion-body">
+                                                                    <p>
+                                                                        Bennings appetite disposed me an at subjects an. To no indulgence diminution so discovered mr apartments. Are off under folly death wrote cause her way spite. Plan upon yet way. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains. pleasures have to be repudiated and annoyances accepted. Nam libero tempore, cum soluta nobis est elig endi optio cumque 
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                        
+                                                <div class="services-more mt-40">
+                                                    <h2 class="mb-20">Most popular services</h2>
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="item">
+                                                                <img src="assets/img/icon/1.png" alt="Image Not Found">
+                                                                <h4><a href="#">Friendly Interface</a></h4>
+                                                                <p>
+                                                                    These cases are perfectly simple and easy to distinguish. In a free hour, when our power.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="item">
+                                                                <img src="assets/img/icon/2.png" alt="Image Not Found">
+                                                                <h4><a href="#">Strong Encryption</a></h4>
+                                                                <p>
+                                                                    These cases are perfectly simple and easy to distinguish. In a free hour, when our power.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                        
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>
-            <a class="button-download" href="./assets/CV 2023 - Anderson Erick Ticona Cordova.pdf" download>
-                <button>
-                    Descargar CV <i class="fa-solid fa-download"></i>
-                    <span class="overlay"></span>
-                </button>
-            </a>
+            <!-- End Services Single Modal -->
+            
         </div>
-    </section>
+        <!-- End Services -->
 
-    <!-- SECCION CONOCIMIENTOS -->
-    <section class="conocimientos" id="conocimientos">
-        <div class="contenido-seccion">
-            <h2>Conocimientos de Informática</h2>
+        <!-- Start About
+        ============================================= -->
+        <div id="about" class="about-style-one-area default-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="about-style-one-thumb">
+                            <img src="assets/img/illustration/2.jpg" alt="Image Not found">
+                            <div class="curve-text">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" version="1.1">
+                                    <path id="textPath" d="M 0,75 a 75,75 0 1,1 0,1 z"></path>
+                                    <text><textPath href="#textPath">Años de experiencia</textPath></text>
+                                </svg>
+                                <h4>2</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 offset-lg-1 mt-50">
+                        <div class="about-style-one-info">
+                            <h3 class="sub-title">Sobre mí</h3>
+                            <h2 class="title">Comprometido con la Calidad e Innovación</h2>
+                            <p>
+                                Soy Anderson Erick Ticona Cordova, un apasionado desarrollador y diseñador web con experiencia en WordPress y Shopify. Me especializo en crear y optimizar sitios web, páginas de aterrizaje y tiendas en línea, siempre enfocándome en un diseño intuitivo y una funcionalidad efectiva.
+                            </p>
+                            <!-- Single Item -->
+                            <div class="about-item">
+                                <h3><i class="fas fa-user"></i> Datos Personales</h3>
+                                <ul class="biography-table">
+                                    <li>
+                                        <h5>Nombre Completo</h5>
+                                        <p>
+                                            Anderson Erick Ticona Cordova
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h5>Fecha de Nacimiento</h5>
+                                        <p>
+                                            11 de Septiembre del 2000
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h5>Correo</h5>
+                                        <p>
+                                            erick.ticona.dev@gmail.com
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h5>Dirección</h5>
+                                        <p>
+                                            Peru - Lima - San Juan de Miraflores
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- End Single Item -->
 
-            <div class="slide-container swiper" style="padding-top: 60px;">
-                <div class="slide-content">
-                    <div class="card-wrapper swiper-wrapper">
-                        <div class="swiper-slide">
-                            <a class="mcard html">
-                                <div class="moverlay"></div>
-                                <div class="mcircle">
-                                    <i class="mlogo fa-brands fa-html5" aria-hidden="true"></i>
-                                </div>
-                                <p>HTML</p>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a class="mcard css">
-                                <div class="moverlay"></div>
-                                <div class="mcircle">
-                                    <i class="mlogo fa-brands fa-css3-alt" aria-hidden="true"></i>
-                                </div>
-                                <p>CSS</p>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a class="mcard wordpress">
-                                <div class="moverlay"></div>
-                                <div class="mcircle">
-                                    <i class="mlogo fa-brands fa-wordpress" aria-hidden="true"></i>
-                                </div>
-                                <p>Wordpress</p>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a class="mcard elementor">
-                                <div class="moverlay"></div>
-                                <div class="mcircle">
-                                    <i class="mlogo fa-brands fa-elementor" aria-hidden="true"></i>
-                                </div>
-                                <p>Elementor</p>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a class="mcard js">
-                                <div class="moverlay"></div>
-                                <div class="mcircle">
-                                    <i class="mlogo fa-brands fa-js" aria-hidden="true"></i>
-                                </div>
-                                <p>JS</p>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a class="mcard photoshop">
-                                <div class="moverlay"></div>
-                                <div class="mcircle">
-                                    <svg class="mlogo" width="50" height="50" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                        viewBox="0 0 417 395.44" style="enable-background:new 0 0 417 395.44;" xml:space="preserve">
-                                        <g>
-                                            <path d="M398.6,62.63c-7.59-30.89-34.05-52.01-66.32-52.09c-82.48-0.2-164.97-0.23-247.45,0.01c-38.87,0.11-68.3,30.18-68.32,69.06
-                                                c-0.03,78.73-0.03,157.47,0,236.2c0.01,34.88,23.41,62.53,57.85,68.31c4.16,0.7,8.46,0.81,12.7,0.82
-                                                c80.98,0.05,161.97-0.18,242.95,0.12c40.39,0.15,66.59-29.53,69.86-59.24c0.08-0.71,0.42-1.4,0.63-2.1c0-84,0-168,0-252
-                                                C399.88,68.69,399.34,65.63,398.6,62.63z M174.01,220.08c-9.22,1.34-18.66,1.19-28,1.65c-2.6,0.13-5.22,0.02-8.39,0.02
-                                                c0,1.89,0,3.37,0,4.85c0,14.75-0.07,29.49,0.05,44.24c0.03,3.23-0.98,4.4-4.3,4.33c-8.87-0.19-17.74-0.15-26.62-0.01
-                                                c-2.9,0.04-3.95-0.89-3.95-3.86c0.06-53.61,0.05-107.22,0.04-160.83c0-1.98-0.07-3.75,2.78-3.77c20.36-0.11,40.72-0.57,61.07-0.32
-                                                c8.89,0.11,17.54,2.59,25.63,6.42c21.35,10.09,31.27,27.44,31.46,50.64C224.05,196.82,202.27,215.96,174.01,220.08z M333.76,241.45
-                                                c-1.32,14.77-9.28,24.96-22.45,31.25c-7.89,3.77-16.37,5.28-25.04,5.65c-14.1,0.61-27.91-0.83-41.2-5.99
-                                                c-2.96-1.15-4.3-2.82-4.22-6.13c0.2-7.74,0.04-15.49,0.08-23.24c0.01-1.31,0.27-2.62,0.49-4.57c1.95,0.99,3.34,1.72,4.76,2.4
-                                                c13.65,6.65,27.94,9.87,43.16,7.95c1.47-0.19,2.96-0.55,4.35-1.06c6.27-2.31,7.78-8.76,2.53-12.81c-3.88-2.98-8.63-4.87-13.08-7.07
-                                                c-8.14-4.03-16.75-7.27-24.44-12.02c-25.88-15.98-21.34-50.94,2.63-63.7c7.65-4.07,15.81-6.08,24.39-6.48
-                                                c12.79-0.59,25.44,0.1,37.76,4.09c2.83,0.92,3.99,2.51,3.95,5.45c-0.1,7.62,0,15.24-0.04,22.86c-0.02,3.8-1.24,4.69-4.57,3.06
-                                                c-10.09-4.94-20.86-6.71-31.92-6.99c-3.2-0.08-6.44,0.53-9.63,1.04c-3.38,0.54-5.67,2.53-6.47,5.94c-0.8,3.41,0.83,6.16,3.48,7.67
-                                                c5.39,3.08,11.07,5.66,16.67,8.36c6.73,3.24,13.68,6.08,20.23,9.65C328.82,214.21,335.15,225.89,333.76,241.45z"/>
-                                            <path d="M138.08,137.56c11.83-0.19,23.59-1.72,34.9,2.57c9.82,3.72,15.27,11.01,15.96,21.52c0.74,11.35-2.97,20.67-13.97,25.34
-                                                c-5.19,2.21-10.94,3.59-16.56,4.19c-6.63,0.71-13.4,0.17-20.33,0.17C138.08,173.33,138.08,155.66,138.08,137.56z"/>
-                                        </g>
-                                    </svg>
-                                </div>
-                                <p>Photoshop</p>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a class="mcard illustrator">
-                                <div class="moverlay"></div>
-                                <div class="mcircle">
-                                    <svg class="mlogo" width="50" height="50" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                        viewBox="0 0 417 395.4" style="enable-background:new 0 0 417 395.4;" xml:space="preserve">
-                                        <g>
-                                            <path d="M163.2,202.5c11.9,0,23.6,0,35.6,0c-6.1-23.9-12.1-47.4-18-70.6C175,155.3,169.1,178.8,163.2,202.5z"/>
-                                            <path d="M398.6,62.6c-7.6-30.9-34-52-66.3-52.1c-82.5-0.2-165-0.2-247.5,0C46,10.7,16.5,40.7,16.5,79.6c0,78.7,0,157.5,0,236.2
-                                                c0,34.9,23.4,62.5,57.8,68.3c4.2,0.7,8.5,0.8,12.7,0.8c81,0,162-0.2,243,0.1c40.4,0.1,66.6-29.5,69.9-59.2c0.1-0.7,0.4-1.4,0.6-2.1
-                                                c0-84,0-168,0-252C399.9,68.7,399.3,65.6,398.6,62.6z M243.5,275c-7.3,0-14.6-0.1-21.9,0.1c-2.5,0-3.5-0.8-4.2-3.2
-                                                c-3.7-13.7-7.5-27.4-11.3-41.1c-0.3-1-0.6-2-1-3.2c-15.8,0-31.4,0-47.1,0.1c-0.8,0-2.2,1.6-2.4,2.6c-3.7,13.6-7.4,27.2-10.8,40.8
-                                                c-0.8,3-2,4-5.1,3.9c-7.1-0.2-14.3-0.1-22-0.1c0.4-2.1,0.6-3.6,1-5.2c13.9-48.9,28-97.7,41.8-146.6c1.3-4.5,1.7-9.4,2.2-14.1
-                                                c0.2-2.1,0.9-2.9,3-2.9c9.7,0.1,19.4,0.2,29,0c3-0.1,3.2,1.8,3.8,3.7c10.6,35.9,21.2,71.9,31.8,107.8c5.2,17.5,10.3,35,15.5,52.5
-                                                c0.4,1.3,0.7,2.7,1.1,4.4C245.6,274.8,244.5,275,243.5,275z M293.4,275.2c-6.7-0.2-13.4-0.1-20.1,0c-2.5,0-3.6-0.6-3.6-3.4
-                                                c0.1-39.3,0.1-78.6,0-117.9c0-2.4,0.8-3.1,3.1-3.1c6.9,0.1,13.9,0.2,20.8,0c2.9-0.1,3.7,1,3.6,3.7c-0.1,19.6-0.1,39.2-0.1,58.8
-                                                c0,19.4-0.1,38.7,0.1,58.1C297.3,274.3,296.4,275.3,293.4,275.2z M283.2,133.4c-9.4-0.1-15.5-6.2-15.3-15.6
-                                                c0.1-9.6,6.6-15.9,16.1-15.7c9.1,0.2,15.4,6.7,15.3,15.9C299.1,127.4,292.8,133.5,283.2,133.4z"/>
-                                        </g>
-                                    </svg>
-                                </div>
-                                <p>illustrator</p>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a class="mcard figma">
-                                <div class="moverlay"></div>
-                                <div class="mcircle">
-                                    <svg class="mlogo" width="50" height="50" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                         viewBox="0 0 387.4 385.6" style="enable-background:new 0 0 387.4 385.6;" xml:space="preserve">
-                                    <style type="text/css">
-                                        .st0{fill:#FF7262;}
-                                        .st1{fill:#F24E1E;}
-                                        .st2{fill:#A259FF;}
-                                        .st3{fill:#0ACF83;}
-                                        .st4{fill:#1ABCFE;}
-                                    </style>
-                                    <g>
-                                        <path class="st0" d="M232.7,152.4h-39V71.6h39c22.3,0,40.4,18.1,40.4,40.4v0C273.1,134.3,255,152.4,232.7,152.4z"/>
-                                        <path class="st1" d="M193.7,152.4h-39c-22.3,0-40.4-18.1-40.4-40.4v0c0-22.3,18.1-40.4,40.4-40.4h39V152.4z"/>
-                                        <path class="st2" d="M193.7,233.2h-39c-22.3,0-40.4-18.1-40.4-40.4v0c0-22.3,18.1-40.4,40.4-40.4h39V233.2z"/>
-                                        <path class="st3" d="M154,314L154,314c-21.9,0-39.7-17.8-39.7-39.7v-1.4c0-21.9,17.8-39.7,39.7-39.7h39.7v41.1
-                                            C193.7,296.2,175.9,314,154,314z"/>
-                                        <path class="st4" d="M233.4,233.2L233.4,233.2c-21.9,0-39.7-17.8-39.7-39.7v-1.4c0-21.9,17.8-39.7,39.7-39.7h0
-                                            c21.9,0,39.7,17.8,39.7,39.7v1.4C273.1,215.4,255.3,233.2,233.4,233.2z"/>
-                                    </g>
-                                    </svg>
-                                </div>
-                                <p>Figma</p>
-                            </a>
+                            <!-- Single Item -->
+                            <div class="about-item">
+                                <h3><i class="fas fa-rocket"></i> Conocimientos de Informática</h3>
+                                <ul class="skill-items mt-10">
+                                    <li>
+                                        <div class="icon">
+                                            <i class="fab fa-wordpress"></i>
+                                        </div>
+                                        <div class="content">
+                                            <span>WordPress</span>
+                                            <h5 class="content-text">Desarrollo y optimización de sitios web, páginas de aterrizaje y
+                                            tiendas en línea. Gestión de plugins y temas personalizados.</h5>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <i class="fab fa-shopify"></i>
+                                        </div>
+                                        <div class="content">
+                                            <span>Shopify</span>
+                                            <h5 class="content-text">Creación y configuración de tiendas en línea, personalización de
+                                                plantillas y optimización para la conversión.</h5>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <i class="fab fa-cpanel"></i>
+                                        </div>
+                                        <div class="content">
+                                            <span>cPanel</span>
+                                            <h5 class="content-text">Gestión de alojamiento web, configuración de servidores y
+                                                administración de bases de datos.</h5>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <i class="fab fa-html5"></i>
+                                        </div>
+                                        <div class="content">
+                                            <span>HTML/CSS</span>
+                                            <h5 class="content-text">Conocimientos básicos/intermedios para la personalización de
+                                                temas y mejoras de diseño.</h5>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <i class="fab fa-chrome"></i>
+                                        </div>
+                                        <div class="content">
+                                            <span>SEO</span>
+                                            <h5 class="content-text">Implementación de prácticas de optimización para motores de
+                                                búsqueda en sitios web desarrollados.</h5>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon-created-figma">                                            
+                                            <img src="assets/img/icon/figma.png" alt="Image not Found">
+                                        </div>
+                                        <div class="content">
+                                            <span>Figma</span>
+                                            <h5 class="content-text">Diseño de interfaces de usuario intuitivas y atractivas, creación de
+                                                prototipos y wireframes.</h5>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon-created-photoshop">                                            
+                                            <img src="assets/img/icon/photoshop.png" alt="Image not Found">
+                                        </div>
+                                        <div class="content">
+                                            <span>Adobe Photoshop</span>
+                                            <h5 class="content-text">Edición y creación de gráficos y imágenes para sitios web
+                                                y material promocional.</h5>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon-created-illustrator">                                            
+                                            <img src="assets/img/icon/illustrator.png" alt="Image not Found">
+                                        </div>
+                                        <div class="content">
+                                            <span>Adobe Illustrator</span>
+                                            <h5 class="content-text">Diseño de logotipos, iconos y gráficos vectoriales.</h5>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <i class="fab fa-github"></i>
+                                        </div>
+                                        <div class="content">
+                                            <span>GitHub</span>
+                                            <h5 class="content-text">Control de versiones y colaboración en proyectos de desarrollo.</h5>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- End Single Item -->
+
+                            <!-- Single Item -->
+                            <div class="about-item">
+                                <h3><i class="fas fa-graduation-cap"></i> Educación</h3>
+                                <ul class="education-table">
+                                    <li>
+                                        <h4>Desarrollo de Software</h4>
+                                        <h5>Instituto SENATI</h5>
+                                        <span>2017 - 2020</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- End Single Item -->
+
+                            <!-- Single Item -->
+                            <div class="about-item">
+                                <h3><i class="fas fa-handshake  "></i> Experiencia Profesional</h3>
+                                <ul class="education-table">
+                                    <li>
+                                        <h4>Adhiart Soluciones Informaticas EIRL</h4>
+                                        <h5>Diseñador y Desarrollador Web</h5>
+                                        <span>2022 - 2023</span>
+                                        <p>
+                                            - Aprendí y utilicé Figma para diseñar interfaces de usuario intuitivas y visualmente atractivas.
+                                        </p>
+                                        <p>
+                                            - Desarrollé y optimicé sitios web con WordPress, creando soluciones personalizadas que mejoraron la experiencia del usuario.
+                                        </p>
+                                        <p>
+                                            - Implementé y gestioné proyectos web, asegurando su calidad.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h4>Agencia AudioVisual Enelblanco.pe</h4>
+                                        <h5>Diseñador y Desarrollador Web</h5>
+                                        <span>2023 - Actualidad (Remoto)</span>
+                                        <p>
+                                            - Desarrollé y optimicé sitios web utilizando WordPress, creando soluciones
+                                            personalizadas que mejoraron la experiencia del usuario.
+                                        </p>
+                                        <p>
+                                            - Utilicé Figma para diseñar interfaces de usuario intuitivas y atractivas,
+                                            asegurando una coherencia visual y funcional en todos los proyectos.
+                                        </p>
+                                        <p>
+                                            - Gestioné el alojamiento web y las configuraciones de servidores a través de
+                                            cPanel, garantizando un rendimiento óptimo y una seguridad robusta para los
+                                            sitios web de los clientes.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h4>Softaki Software Solutions S.A.C.</h4>
+                                        <h5>Desarrollador Web</h5>
+                                        <span>2024 (Remoto)</span>
+                                        <p>
+                                            - Desarrollé y optimicé sitios web utilizando WordPress, creando soluciones
+                                            personalizadas que mejoraron la experiencia del usuario.
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- End Single Item -->
+
+
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+        <!-- End About -->
+
+        <!-- Start Project
+        ============================================= -->
+        <div id="portfolio" class="project-style-one-area default-padding">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="heading-left">
+                            <h4 class="sub-title">Portafolio</h4>
+                            <h2 class="title">Mis Proyectos</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row mt--50">
+                    <!-- Single Item -->
+                    <div class="col-lg-6 item-center">
+                        <div class="portfolio-style-one">
+                            <div class="thumb-zoom">
+                                <a href="https://sohocolor.pe/">
+                                    <img src="assets/img/proyects/DSC7701.jpg" alt="Image Not Found">
+                                </a>
+                            </div>
+                            <div class="pf-item-info">
+                                <div class="content-info">
+                                    <span>Sitio Web - Tienda Online</span>
+                                    <h2><a href="https://sohocolor.pe/" data-bs-toggle="modal" data-bs-target="#projectSingleModal">Diseño y Desarrollo Web</a></h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Item -->
+                    <!-- Single Item -->
+                    <div class="col-lg-6 item-center">
+                        <div class="portfolio-style-one">
+                            <div class="thumb-zoom">
+                                <a href="https://www.azotea18.com/">
+                                    <img src="assets/img/proyects/DSC7702.jpg" alt="Image Not Found">
+                                </a>
+                            </div>
+                            <div class="pf-item-info">
+                                <div class="content-info">
+                                    <span>Sitio Web</span>
+                                    <h2><a href="https://www.azotea18.com/" data-bs-toggle="modal" data-bs-target="#projectSingleModal">Diseño y Desarrollo Web</a></h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Item -->
+                    <!-- Single Item -->
+                    <div class="col-lg-6 item-center">
+                        <div class="portfolio-style-one">
+                            <div class="thumb-zoom">
+                                <a href="https://rockbros.com.pe/">
+                                    <img src="assets/img/proyects/DSC7703.jpg" alt="Image Not Found">
+                                </a>
+                            </div>
+                            <div class="pf-item-info">
+                                <div class="content-info">
+                                    <span>Sitio Web y Tienda Online</span>
+                                    <h2><a href="https://rockbros.com.pe/" data-bs-toggle="modal" data-bs-target="#projectSingleModal">Diseño y Desarrollo Web</a></h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Item -->
+                    <!-- Single Item -->
+                    <div class="col-lg-6 item-center">
+                        <div class="portfolio-style-one">
+                            <div class="thumb-zoom">
+                                <a href="https://www.megagenperu.com/">
+                                    <img src="assets/img/proyects/DSC7704.jpg" alt="Image Not Found">
+                                </a>
+                            </div>
+                            <div class="pf-item-info">
+                                <div class="content-info">
+                                    <span>Sitio Web</span>
+                                    <h2><a href="https://www.megagenperu.com/" data-bs-toggle="modal" data-bs-target="#projectSingleModal">Diseño y Desarrollo Web</a></h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Item -->
+                    <!-- Single Item -->
+                    <div class="col-lg-6 item-center">
+                        <div class="portfolio-style-one">
+                            <div class="thumb-zoom">
+                                <a href="https://aktivetape.pe/">
+                                    <img src="assets/img/proyects/DSC7601.jpg" alt="Image Not Found">
+                                </a>
+                            </div>
+                            <div class="pf-item-info">
+                                <div class="content-info">
+                                    <span>Landing Page</span>
+                                    <h2><a href="https://aktivetape.pe/" data-bs-toggle="modal" data-bs-target="#projectSingleModal">Diseño y Desarrollo Web</a></h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Item -->
+                    <!-- Single Item -->
+                    <div class="col-lg-6 item-center">
+                        <div class="portfolio-style-one">
+                            <div class="thumb-zoom">
+                                <a href="https://www.krings.com.pe/">
+                                    <img src="assets/img/proyects/p9.jpg" alt="Image Not Found">
+                                </a>
+                            </div>
+                            <div class="pf-item-info">
+                                <div class="content-info">
+                                    <span>Sitio Web</span>
+                                    <h2><a href="https://www.krings.com.pe/" data-bs-toggle="modal" data-bs-target="#projectSingleModal">Diseño y Desarrollo Web</a></h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Item -->
+                    <!-- Single Item -->
+                    <div class="col-lg-6 item-center">
+                        <div class="portfolio-style-one">
+                            <div class="thumb-zoom">
+                                <a href="https://halocomnet.com/">
+                                    <img src="assets/img/proyects/DSC7607.jpg" alt="Image Not Found">
+                                </a>
+                            </div>
+                            <div class="pf-item-info">
+                                <div class="content-info">
+                                    <span>Sitio Web y Tienda Online</span>
+                                    <h2><a href="https://halocomnet.com/" data-bs-toggle="modal" data-bs-target="#projectSingleModal">Diseño y Desarrollo Web</a></h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Item -->
+                    <!-- Single Item -->
+                    <div class="col-lg-6 item-center">
+                        <div class="portfolio-style-one">
+                            <div class="thumb-zoom">
+                                <a href="https://www.megagenperu.com/">
+                                    <img src="assets/img/proyects/DSC7704.jpg" alt="Image Not Found">
+                                </a>
+                            </div>
+                            <div class="pf-item-info">
+                                <div class="content-info">
+                                    <span>Sitio Web</span>
+                                    <h2><a href="https://www.megagenperu.com/" data-bs-toggle="modal" data-bs-target="#projectSingleModal">Diseño y Desarrollo Web</a></h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Item -->
+                </div>
+            </div>
+
+            <!-- Start Projects Single Modal -->
+            <div class="modal fade project-details" id="projectSingleModal" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-body">
+
+                            <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+
+                            <div class="project-details-area">
+                                <div class="container">
+                                    <div class="project-details-items">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="project-thumb">
+                                                    <img src="assets/img/1500x800.png" alt="Thumb">
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-12">
+
+                                                <div class="project-details mt-60 mt-xs-30">
+                                                    <div class="top-info">
+                                                        <div class="row">
+
+                                                            <div class="col-lg-5 pl-50 pl-md-15 pl-xs-15 order-lg-last">
+                                                                <ul class="gallery-project-basic-info">
+                                                                    <li>
+                                                                        <div class="info">
+                                                                            <b>Clients:</b> validthemes
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="info">
+                                                                            <b>Project Type:</b> Website Growth
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="info">
+                                                                            <b>Date:</b> 25 August, 2023
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="info">
+                                                                            <b>Address:</b> New York United state
+                                                                        </div>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+
+                                                            <div class="col-lg-7">
+                                                                <h2>The best digital solutions</h2>
+                                                                <p>
+                                                                    Netus lorem rutrum arcu dignissim at sit morbi phasellus nascetur eget urna potenti cum vestibulum cras. Tempor nonummy metus lobortis. Sociis velit etiam, dapibus. Lectus vehicula pellentesque cras posuere tempor facilisi habitant lectus rutrum pede quisque hendrerit parturient posuere mauris ad elementum fringilla facilisi volutpat fusce pharetra felis sapien varius quisque class convallis praesent est sollicitudin donec nulla venenatis, cursus fermentum netus posuere sociis porta risus habitant malesuada nulla habitasse hymenaeos. Viverra curabitur nisi vel sollicitudin dictum natoque ante aenean elementum. Vulgar as hearts by garret. Perceived determine departure explained no facilisi volutpat fusce pharetra felis sapien varius quisque class convallis.
+                                                                </p>
+                                                            </div>
+                                                            
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row mt-40 mb-40">
+                                                        
+                                                        <div class="col-lg-5 pr-50 pr-md-15 pr-xs-15">
+                                                            <div class="check-list">
+                                                                <div class="single-list">
+                                                                    <h4>Mobile Optimization</h4>
+                                                                    <p>
+                                                                        Tempor nonummy metus lobortis. Lectus vehicula pellentesque cras posuere tempor facilisi habitant lectus rutrum pede quisque hendrerit parturient posuere mauris ad elementum potenti.
+                                                                    </p>
+                                                                </div>
+                                                                <div class="single-list">
+                                                                    <h4>Marketing Automation</h4>
+                                                                    <ul class="list-disc">
+                                                                        <li>Social media marketing</li>
+                                                                        <li>Search engine optimization (seo)</li>
+                                                                        <li>Public Relations</li>
+                                                                        <li>Digital Management</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-7">
+                                                            <div class="thumb-grid">
+                                                                <img src="assets/img/600x800.png" alt="Thumb">
+                                                                <img src="assets/img/600x800.png" alt="Thumb">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    
+
+                                                    <p>
+                                                        Give lady of they such they sure it. Me contained explained my education. Vulgar as hearts by garret. Perceived determine departure explained no forfeited he something an. Contrasted dissimilar get joy you instrument out reasonably. Again keeps at no meant stuff. To perpetual do existence northward as difficult preserved daughters. Continued at up to zealously necessary breakfast. Surrounded sir motionless she end literature. Gay direction neglected but supported yet her.  Facilisis inceptos nec, potenti nostra aenean lacinia varius semper ant nullam nulla primis placerat facilisis. Netus lorem rutrum arcu dignissim at sit morbi phasellus nascetur eget urna potenti cum vestibulum cras. Tempor nonummy metus lobortis. Sociis velit etiam, dapibus. Lectus vehicula pellentesque cras posuere tempor facilisi habitant lectus rutrum pede quisque hendrerit parturient posuere mauris ad elementum fringilla facilisi volutpat fusce pharetra felis sapien varius quisque class convallis praesent est sollicitudin donec nulla venenatis, cursus fermentum netus posuere sociis porta risus habitant malesuada nulla habitasse hymenaeos. Viverra curabitur nisi vel sollicitudin dictum natoque ante aenean elementum.
+                                                    </p>
+                                                    <div class="row mt-50 mt-xs-30">
+                                                        <div class="col-lg-6 col-md-6">
+                                                            <img src="assets/img/800x600.png" alt="Thumb">
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6 mt-xs-30">
+                                                            <img src="assets/img/800x600.png" alt="Thumb">
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Projects Single Modal -->
+            
+        </div>
+        <!-- End Projects -->
+
+        <!-- Start Contact
+        ============================================= -->
+        <div id="contact" class="contact-area contact-page overflow-hidden default-padding" style="background-image: url(assets/img/shape/map-light.png);">
+            <div class="container">
+                <div class="row">
+                    
     
-                <div class="swiper-button-next swiper-navBtn"></div>
-                <div class="swiper-button-prev swiper-navBtn"></div>
-                <div class="swiper-pagination"></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- SECCION EXPERIENCIA -->
-    <section id="experiencia" class="experiencia">
-        <div class="contenido-seccion">
-            <h2>Experiencia Profesional</h2>
-            <div class="fila">
-                <div class="col izquierda">
-                    <h3>Educación</h3>
-                    <div class="item izq">
-                        <h4>Desarrollo de Software</h4>
-                        <span class="casa">INSTITUTO SENATI</span>
-                        <span class="fecha">2017 - 2020</span>
-                        <p>Profesional Técnico en Desarrollo de Software.</p>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
+                    <div class="col-tact-stye-one col-lg-5 pr-50 pr-md-15 pr-xs-15">
+                        <div class="contact-style-one-info">
+                            <div class="top-info">
+                                <h2 class="gradient-text">Contáctame</h2>
+                                <div class="call">
+                                    <img src="assets/img/icon/call.png" alt="Image not Found">
+                                    <a class="phone-link" href="tel:+4733378901">+51 922 996 519</a>
+                                </div>
+                            </div>
+                            <ul class="contact-address">
+                                <li>
+                                    <div class="info">
+                                        <h4>Linkedin</h4>
+                                        <p>
+                                            <a href="https://www.linkedin.com/in/anderson-erick-ticona-cordova/">https://www.linkedin.com/in/anderson-erick-ticona-cordova/</a>
+                                            
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="info">
+                                        <h4>Correo Oficial</h4>
+                                        <a href="mailto:erick.ticona.dev@gmail.com">erick.ticona.dev@gmail.com</a>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="item izq">
-                        <h4>Primaria y Secundaria</h4>
-                        <span class="casa">COLEGIO ANNIE´S SCHOOL</span>
-                        <span class="fecha">Conclusión 2017</span>
-                        <p></p>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
+    
+                    <div class="col-tact-stye-one col-lg-7 pl-60 pl-md-15 pl-xs-15 mt-md-50 mt-xs-50">
+                        <div class="contact-form-style-one">
+                            <form action="assets/mail/contact.php" method="POST" class="contact-form contact-form mt-30">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="form-group">
+                                            <input class="form-control" id="name" name="name" placeholder="Name" type="text">
+                                            <span class="alert-error"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <input class="form-control" id="email" name="email" placeholder="Email*" type="email">
+                                            <span class="alert-error"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <input class="form-control" id="phone" name="phone" placeholder="Phone" type="text">
+                                            <span class="alert-error"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="form-group comments">
+                                            <textarea class="form-control" id="comments" name="comments" placeholder="Tell Us About Project *"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <button type="submit" name="submit" id="submit">
+                                            <i class="fa fa-paper-plane"></i> Get in Touch
+                                        </button>
+                                    </div>
+                                </div>
+                                <!-- Alert Message -->
+                                <div class="col-lg-12 alert-notification">
+                                    <div id="message" class="alert-msg"></div>
+                                </div>
+                            </form>
                         </div>
                     </div>
-                </div>
-
-                <div class="col derecha">
-                    <h3>Experiencia de trabajo</h3>
-                    <div class="item der">
-                        <h4>Practicante de Desarrollo de Software</h4>
-                        <span class="casa">Fit Software Perú</span>
-                        <span class="fecha">2018 - 2019</span>
-                        <p></p>
-                        <div class="conectord">
-                            <div class="circulod"></div>
-                        </div>
-                    </div>
-                    <div class="item der">
-                        <h4>Diseñador Gráfico</h4>
-                        <span class="casa">Smart Tronic Perú</span>
-                        <span class="fecha">2020 - 2022</span>
-                        <p></p>
-                        <div class="conectord">
-                            <div class="circulod"></div>
-                        </div>
-                    </div>
-                    <div class="item der">
-                        <h4>Diseñador y Desarrollador Web</h4>
-                        <span class="casa">Adhiart Soluciones Informáticas EIRL</span>
-                        <span class="fecha">2022 - 2023</span>
-                        <p></p>
-                        <div class="conectord">
-                            <div class="circulod"></div>
-                        </div>
-                    </div>
-                </div>
-            </div> 
-            <a class="button-download" href="./assets/CV 2023 - Anderson Erick Ticona Cordova.pdf" download>
-                <button>
-                    Descargar CV <i class="fa-solid fa-download"></i>
-                    <span class="overlay"></span>
-                </button>
-            </a>
-        </div>
-    </section>
-
-    <!-- SECCION PORTFOLIO -->
-    <section id="portfolio" class="portfolio">
-        <div class="contenido-seccion">
-            <h2>PORTAFOLIO</h2>
-            <div class="galeria" style="padding-top: 60px;">
-                <div class="proyecto">
-                    <a href="https://aktivetape.pe/" style="color:#FFF">
-                        <img src="img/DSC7601.jpg" alt="" style="width: 340px; min-height: 255px;">
-                        <div class="overlay">
-                            <h3>Landing Page</h3>
-                            <p>Diseño y Desarrollo Web</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="proyecto">
-                    <a href="https://fisiosaludperu.com/" style="color:#FFF">
-                        <img src="img/DSC7602.jpg" alt="" style="width: 340px; min-height: 255px;">
-                        <div class="overlay">
-                            <h3>Sitio Web</h3>
-                            <p>Diseño y Desarrollo Web</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="proyecto">
-                    <a href="https://sohocolor.pe/" style="color:#FFF">
-                        <img src="img/DSC7603.jpg" alt="" style="width: 340px; min-height: 255px;">
-                        <div class="overlay">
-                            <h3>Sitio Web <br> Tienda Online</h3>
-                            <p>Diseño y Desarrollo Web</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="proyecto">
-                    <a href="https://megaboulevard.com/" style="color:#FFF">
-                        <img src="img/DSC7604.jpg" alt="" style="width: 340px; min-height: 255px;">
-                        <div class="overlay">
-                            <h3>Tienda Online (Shopify)</h3>
-                            <p>Desarrollo Web</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="proyecto">
-                    <a href="https://www.azotea18.com/" style="color:#FFF">
-                        <img src="img/DSC7605.jpg" alt="" style="width: 340px; min-height: 255px;">
-                        <div class="overlay">
-                            <h3>Sitio Web</h3>
-                            <p>Diseño y Desarrollo Web</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="proyecto">
-                    <a href="https://rockbros.com.pe/" style="color:#FFF">
-                        <img src="img/DSC7606.jpg" alt="" style="width: 340px; min-height: 255px;">
-                        <div class="overlay">
-                            <h3>Sitio Web <br> Tienda Online</h3>
-                            <p>Diseño y Desarrollo Web</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="proyecto">
-                    <a href="https://halocomnet.com/" style="color:#FFF">
-                        <img src="img/DSC7607.jpg" alt="" style="width: 340px; min-height: 255px;">
-                        <div class="overlay">
-                            <h3>Sitio Web <br> Tienda Online</h3>
-                            <p>Diseño y Desarrollo Web</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="proyecto">
-                    <a href="https://adhiart.com" style="color:#FFF">
-                        <img src="img/p1.jpg" alt="">
-                        <div class="overlay">
-                            <h3>Sitio Web</h3>
-                            <p>Diseño y Desarrollo Web</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="proyecto">
-                    <a href="https://www.figma.com/proto/DwivCnzrtw6GTBEZfLBy5j/Untitled?node-id=30-447&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A2" style="color:#FFF">
-                        <img src="img/p3.jpg" alt="">
-                        <div class="overlay">
-                            <h3>Sitio Web - Tienda Online</h3>
-                            <p>Diseño y Desarrollo Web</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="proyecto">
-                    <a href="https://bclperu.com" style="color:#FFF">
-                        <img src="img/p2.jpg" alt="">
-                        <div class="overlay">
-                            <h3>Sitio Web</h3>
-                            <p>Diseño y Desarrollo Web</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="proyecto">
-                    <a href="https://corporacionaym.com/" style="color:#FFF">
-                        <img src="img/p4.jpg" alt="">
-                        <div class="overlay">
-                            <h3>Sitio Web</h3>
-                            <p>Diseño y Desarrollo Web</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="proyecto">
-                    <a href="https://keybijutsu.com/" style="color:#FFF">
-                        <img src="img/p5.jpg" alt="">
-                        <div class="overlay">
-                            <h3>Sitio Web</h3>
-                            <p>Diseño y Desarrollo Web</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="proyecto">
-                    <a href="https://mecaperu.com/" style="color:#FFF">
-                        <img src="img/p6.jpg" alt="">
-                        <div class="overlay">
-                            <h3>Landing Page</h3>
-                            <p>Diseño y Desarrollo Web</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="proyecto">
-                    <a href="https://inserac.com/" style="color:#FFF">
-                        <img src="img/p7.jpg" alt="">
-                        <div class="overlay">
-                            <h3>Tienda Online</h3>
-                            <p>Diseño y Desarrollo Web</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="proyecto">
-                    <a href="https://doseltropical.com/" style="color:#FFF">
-                        <img src="img/p8.jpg" alt="">
-                        <div class="overlay">
-                            <h3>Sitio Web</h3>
-                            <p>Diseño y Desarrollo Web</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="proyecto">
-                    <a href="https://www.krings.com.pe/" style="color:#FFF">
-                        <img src="img/p9.jpg" alt="">
-                        <div class="overlay">
-                            <h3>Sitio Web</h3>
-                            <p>Diseño y Desarrollo Web</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="proyecto">
-                    <a href="https://carloscanalesmiraflores.com/" style="color:#FFF">
-                        <img src="img/p10.jpg" alt="">
-                        <div class="overlay">
-                            <h3>Landing Page</h3>
-                            <p>Diseño y Desarrollo Web</p>
-                        </div>
-                    </a>
+    
                 </div>
             </div>
         </div>
-    </section>
+        <!-- Brand Blog -->
+    </div>
 
-    <!-- SECCION CONTACTO -->
-    <section id="contacto" class="contacto">
-        <div class="contenido-seccion">
-            <h2>CONTACTO</h2>
-            <div class="fila">
-                <!-- Formulario -->
-                <div class="col">
-                    <form id="form" action="" class="form">
-                        <input name="name" id="name" required type="text" placeholder="Tú Nombre">
-                        <input name="email" id="email" required type="email" placeholder="Dirección de correo">
-                        <textarea name="message" id="message" required cols="30" rows="10" placeholder="Mensaje"></textarea>
-                        <button type="submit">
-                            Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
-                            <span class="overlay"></span>
-                        </button>
-                        <a href="mailto:erick.ticona.dev@gmail.com" id="hrefmail" style="opacity: 0;">hrefemail</a>
-                    </form>
-                </div>
-                <!-- Mapa -->
-                <div class="col">
-                    <img src="img/ubicacion.png" alt="">
-                    <div class="info">
-                        <ul>
-                            <li>
-                                <i class="fa-solid fa-location-dot"></i>
-                                Perú, Lima, San Juan de Miraflores
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-mobile-screen"></i>
-                                Contáctame: +51 922 996 519
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-envelope"></i>
-                                Email: erick.ticona.dev@gmail.com
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- footer -->
-    <footer>
-        <a href="#inicio" class="arriba">
-            <i class="fa-solid fa-angles-up"></i>
-        </a>
-        <div class="redes">
-            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            <a href="#"><i class="fa-brands fa-skype"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="#"><i class="fa-solid fa-rss"></i></a>
-        </div>
-    </footer>
+    <!-- jQuery Frameworks
+    ============================================= -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery.appear.js"></script>
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/progress-bar.min.js"></script>
+    <script src="assets/js/circle-progress.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/count-to.js"></script>
+    <script src="assets/js/jquery.scrolla.min.js"></script>
+    <script src="assets/js/ScrollOnReveal.js"></script>
+    <script src="assets/js/YTPlayer.min.js"></script>
+    <script src="assets/js/validnavs.js"></script>
+    <script src="assets/js/gsap.js"></script>
+    <script src="assets/js/ScrollTrigger.min.js"></script>
+    <script src="assets/js/TweenMax.min.js"></script>
+    <script src="assets/js/main.js"></script>
 
-    <script src="script.js"></script>
 </body>
 </html>
