@@ -7665,3 +7665,9 @@ ul.gallery-project-basic-info li:first-child {
     text-align: center;
 	line-height: 0px;
 }
+
+.fotoperfil{
+	height: 700px;
+	position: absolute;
+	border-radius: 25%!important;
+}
