@@ -4135,7 +4135,7 @@ button i {
 
 .bg-dark .banner-style-one-area .thumb::before {
 	background: var(--color-primary);
-	opacity: 0.1;
+	opacity: 0;
 }
 
 .profile-grid ul {
@@ -7669,5 +7669,9 @@ ul.gallery-project-basic-info li:first-child {
 .fotoperfil{
 	height: 700px;
 	position: absolute;
-	border-radius: 25%!important;
+}
+
+.fotoperfil .fperfil{
+	border-radius: 100%!important;
+	border: 5px solid var(--color-primary);
 }
