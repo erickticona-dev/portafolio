@@ -2761,7 +2761,7 @@ button i {
 .nav-item:before {
 	content: "";
 	position: absolute;
-	top: 22px;
+	top: 42px;
 	left: 0;
 	width: 0%;
 	height: 2.8px;
