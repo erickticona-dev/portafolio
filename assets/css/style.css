@@ -1,75 +1,3 @@
-/* ----------------------------------
-
-Template Name: Ventix - Personal Portfolio Template
-Author: validtheme
-Description:
-Version: 1.0
-
-Main Font    : Kanit
-Main Color   : #2667FF
-
--------------------------------------
-
-[Typography]
-
-Body copy:    15px 'Kanit', sans-serif
-Header:     36px 'Kanit', sans-serif
-Input, textarea:  16px 'Kanit', sans-serif
-Sidebar heading:  22px 'Kanit', sans-serif
-
->>> TABLE OF CONTENTS:
-=======================
-        
-    Table of contents
-        
-    01. Template default css
-        - Animations
-        - General
-        - Section Title
-        - Video Button
-        - Typography
-        - Tables
-        - Forms
-        - Buttons
-        - Pagination
-        - Colors
-        - Accordion
-        - Tabs
-    02. Preloader
-    03 Navbar
-        - Navbar Left
-        - Nav Sidebar
-        - Navbar Mobile
-    04. Banner
-        - Banner Grid
-        - Banner with typed text
-    05. Services
-        - Serices Grid
-        - Serices Slider
-        - Services Single (Popup)
-	06. Projects / Portfolio / Gallery
-        - Grid Colum
-        - Project Single (Popup)
-    07. About Us
-    08. CV / Resume / Personal Information
-        - Bingraphy
-        - Skills
-        - Education
-	09. Pricing Table
-        - Pricing With Tab
-        - Pricing Item (Grid)
-    10. Companies/Clients/Partner
-    11. Available For Freelancer
-    12. Blog
-        - Blog Grid
-        - Blog Single
-    13. Error 404
-    14. Footer
-    15. PHP Contact Form
-    16. Others
-
-*/
-
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800&display=swap');
 
 
@@ -307,7 +235,7 @@ h1 {
 }
 
 h2 {
-	font-size: 36px;
+	font-size: 28px;
 }
 
 h3 {
@@ -5296,7 +5224,7 @@ ul.service-list li::after {
 }
 
 .project-style-one-area .row {
-	--bs-gutter-x: 100px;
+	--bs-gutter-x: 50px;
 }
 
 .project-style-one-area .project-details-items .row {
@@ -5364,7 +5292,7 @@ ul.service-list li::after {
 }
 
 .project-style-one-area .item-center:nth-child(2n) {
-	margin-top: 80px;
+	margin-top: 0px;
 }
 
 .thumb-zoom img {
@@ -7674,4 +7602,20 @@ ul.gallery-project-basic-info li:first-child {
 .fotoperfil .fperfil{
 	border-radius: 100%;
 	border: 5px solid var(--color-primary);
+}
+
+.grid-improved-3{
+	display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.grid-improved-3 li{
+	margin: 20px 0px!important;
+}
+
+@media screen and (max-width: 767px) {
+	.grid-improved-3{
+    grid-template-columns: repeat(1, 1fr);
+}
 }
